@@ -1,0 +1,14 @@
+.Test {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	align-items: center;
+}
+
+.number-button {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	color: var(--white-color);
+	align-items: center;
+}

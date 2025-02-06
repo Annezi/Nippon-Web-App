@@ -1,0 +1,47 @@
+.Question .options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 12px;
+	width: 317px;
+	height: 92px;
+	margin-top: 20px;
+	width: 317px;
+	text-align: center;
+	color: var(--white-color);
+}
+
+.question-title {
+	color: var(--white-color);
+	text-align: center;	
+}
+
+.Question .option {
+	padding: 14px 0px;
+	border: 2px solid var(--white-color);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.Question .option.selected {
+	background-color: var(--white-color);
+	color: var(--red-color);
+}
+
+.Question .option:hover {
+	background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+	.Question .options {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		width: 317px;
+		height: auto;
+	}
+
+	.Question .option {
+		width: 100%;
+	}
+}

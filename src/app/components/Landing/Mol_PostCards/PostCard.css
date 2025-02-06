@@ -1,0 +1,64 @@
+.post-card {
+	border-radius: 20px;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+	background-color: var(--white-color);
+}
+
+.post-card:hover {
+	transform: translateY(-5px);
+}
+
+.post-card-image {
+	width: 100%;
+	height: auto;
+}
+
+.post-card-content-small {
+	height: 233px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 28px;
+}
+
+.post-card-content-medium {
+	height: 279px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 28px;
+}
+
+.post-card-content-large {
+	height: 344px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 28px;
+}
+
+.post-card-title {
+	color: var(--black-color);
+}
+
+.post-card-description {
+	color: var(--black-color);
+}
+
+/* Размеры карточек */
+.post-card-small {
+	width: 355px;
+	height: 289px;
+}
+
+.post-card-medium {
+	width: 407px;
+	height: 335px;
+}
+
+.post-card-large {
+	width: 476px;
+	height: 400px;
+}

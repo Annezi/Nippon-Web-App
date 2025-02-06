@@ -1,0 +1,75 @@
+.posters-container {
+	width: 1326px;
+	height: auto;
+	background-image: url(/public/Landing/Post_BG.png);
+	background-size: 790px 396px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.posters-first-line {
+	width: 1171px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.pfl-title {
+	margin-top: 95px;
+	margin-bottom: 34px;
+	width: 547px;
+}
+
+.pfl-links {
+	width: 273px;
+	height: 64px;
+	border: 2px solid var(--gray-color);
+	border-radius: 33px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.links-text {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+.links-logo {
+	display: flex;
+	flex-direction: row;
+	width: 109px;
+	margin-top: 3px;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.posts-logo {
+	transition: transform 0.3s ease;
+}
+
+.posts-logo:hover {
+	transform: scale(1.1);
+}
+
+.poster-second-line {
+	display: flex;
+	flex-direction: row;
+	margin-top: 28px;
+}
+
+.poster-second-line-right {
+	display: flex;
+	flex-direction: row;
+	width: 832px;
+	justify-content: space-between;
+}
+
+.psl-low {
+	margin-top: 160px;
+}
+
+.poster-second-line-left {
+	margin-left: 145px;
+	margin-top: 62px;
+}

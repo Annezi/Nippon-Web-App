@@ -1,0 +1,95 @@
+.TestBanner-container {
+	max-width: 1360px;
+	width: 100%;
+	height: 334px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--red-color);
+	border-radius: 20px;
+	border: 10px solid var(--red-color);
+}
+
+.TestBanner-img img {
+	padding: 10px;
+	max-width: 724px;
+	width: 100%;
+}
+
+.TestBanner-info {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+.TestBanner-Description {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 531px;
+	color: var(--white-color);
+	text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+	.TestBanner-container {
+		width: 90%;
+		height: auto;
+		padding: 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--red-color);
+		border-radius: 10px;
+		border: 10px solid var(--red-color);
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.TestBanner-container {
+		width: 90%;
+		height: auto;
+		padding: 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--red-color);
+		border-radius: 10px;
+		border: 10px solid var(--red-color);
+	}
+
+	.TestBanner-info {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.TestBanner-Description {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 317px;
+		color: var(--white-color);
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.TestBanner-Description {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 80%;
+		color: var(--white-color);
+		text-align: center;
+	}
+}

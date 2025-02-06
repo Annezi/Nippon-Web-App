@@ -1,0 +1,29 @@
+.subscribe-button {
+	width: 400px;
+	height: 55px;
+	background-color: var(--white-color);
+	border-radius: 10px;
+	border: none;
+	color: var(--black-color);
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.subscribe-button:hover {
+	background-color: var(--red-color);
+	color: var(--white-color);
+	border: 2px solid var(--white-color);
+}
+
+
+.subscribe-button.subscribed {
+	background-color: white;
+	color: var(--black-color);
+}
+
+
+@media screen and (max-width: 425px) {
+	.subscribe-button {
+		width: 100%;
+	}
+}

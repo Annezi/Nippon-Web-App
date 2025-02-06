@@ -1,0 +1,26 @@
+.sign-banner-box {
+	display: flex;
+	flex-direction: column;
+	max-width: 670px;
+	min-width: 325px;
+	width: 100%;
+	height: 480px;
+	padding: 20px;
+	background-color: var(--red-color);
+	gap: 20px;
+	border-radius: 20px;
+}
+
+.sign-banner-cover {
+	height: 376px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 40px;
+	justify-content: space-between;
+	color: var(--black-color);
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+}

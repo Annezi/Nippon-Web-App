@@ -1,0 +1,35 @@
+.input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	color: var(--light-gray-color);
+}
+
+.input-field::placeholder {
+	font-size: 20px;
+	color: var(--light-gray-color);
+}
+
+.input-field {
+	width: 400px;
+	height: 40px;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid var(--light-gray-color);
+	font-size: 16px;
+	outline: none;
+	transition: border-color 0.3s ease;
+	background-color: var(--red-color);
+	color: var(--white-color);
+}
+
+.input-field:focus {
+	border-bottom-color: var(--red-color);
+}
+
+
+@media screen and (max-width: 425px) {
+	.input-field {
+		width: 100%;
+	}
+}

@@ -1,0 +1,29 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 44px;
+	padding: 16px 20px;
+	border-radius: 5px;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+/* Темы кнопок */
+.button-white {
+	background-color: var(--white-color);
+	color: var(--red-color);
+}
+
+.button-white:hover {
+}
+
+.button-red {
+	background-color: var(--red-color);
+	color: var(--white-color);
+}
+
+.button-red:hover {
+	background-color: var(--white-color);
+	color: var(--red-color);
+}

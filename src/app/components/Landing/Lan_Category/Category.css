@@ -1,0 +1,18 @@
+.category-container {
+	width: 1326px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.category-info {
+	height: 597px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.category-info-top {
+	margin-top: 16px;
+}

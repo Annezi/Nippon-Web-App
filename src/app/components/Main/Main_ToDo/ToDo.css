@@ -1,0 +1,41 @@
+.todo-box {
+	max-width: 1360px;
+	min-width: 350px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	scroll-snap-align: start;
+}
+
+.todo-banners-wrapper {
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+}
+
+/* Отступ для первого элемента */
+.todo-banners-wrapper>*:first-child {
+	margin-left: 20px;
+	/* Отступ от левого края */
+}
+
+/* Отступ для последнего элемента */
+.todo-banners-wrapper>*:last-child {
+	margin-right: 20px;
+	/* Отступ от правого края */
+}
+
+/* Стили для мобильной версии */
+@media screen and (max-width: 768px) {
+	.todo-banners-wrapper {
+		flex-wrap: nowrap;
+		padding-bottom: 10px;
+	}
+
+	/* Отступы для TitlePlaceholder только в мобильной версии */
+	.todo-box .title-placeholder {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,32 @@
+.Result {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.result-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+
+.result-text {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	color: var(--white-color);
+	width: 210px;
+	text-align: center;
+}
+
+@media screen and (max-width : 390px) {
+	.result-content {
+		flex-direction: column;
+	}
+
+	.result-text {
+		width: 317px;
+	}
+}

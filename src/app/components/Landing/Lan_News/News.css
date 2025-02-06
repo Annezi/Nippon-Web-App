@@ -1,0 +1,73 @@
+.news-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.alarm-news {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.news-info {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	width: 100%;
+	height: 100%;
+	justify-content: center
+}
+
+.news-text {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 442px;
+}
+
+/* @media screen and (max-width : 390px) {
+	.news-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 20px;
+		align-items: center;
+	}
+
+	.alarm-news {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.news-info {
+		display: flex;
+		flex-direction: row;
+		gap: 0;
+		width: 350px;
+		justify-content: center
+	}
+
+	.news-text {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		width: 214px;
+	}
+
+	.news-head {
+		width: 170px;
+	}
+
+	.news-description {
+		width: 170px;
+	}
+
+	.news-tanaka-sen img {
+		width: 136px;
+		height: 126px;
+	}
+} */

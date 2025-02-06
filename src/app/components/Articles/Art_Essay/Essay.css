@@ -1,0 +1,42 @@
+.essay-MainInfo {
+	width: 100%;
+	max-width: 688px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.img-container {
+	width: 100%;
+	max-width: 688px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img-description {
+	color: var(--black-color);
+	max-width: 452px;
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+
+@media screen and (max-width : 768px) {
+	.img-container img {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width : 670px) {
+	.img-container img {
+		width: 90%;
+	}
+}

@@ -1,0 +1,66 @@
+/* Основной контейнер для списка статей */
+.article-list {}
+
+/* Контейнер с гридом */
+.article-list-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/* 4 колонки */
+	gap: 20px;
+	/* Расстояние между карточками */
+	grid-auto-flow: dense;
+	/* Заполнение пустот в сетке */
+}
+
+.article-list-wrapper.no-grid {
+	display: block;
+}
+
+/* Ссылка на карточку статьи */
+.article-card-link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Стили для мини-карточек */
+.article-card-mini {
+	grid-column: span 1;
+	/* Занимает 1 колонку */
+}
+
+/* Стили для больших карточек */
+.article-card-large {
+	grid-column: span 2;
+	/* Занимает 2 колонки */
+}
+
+/* Адаптив для экранов меньше 1400px */
+@media screen and (max-width: 1400px) {
+	.article-list-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+		/* 3 колонки */
+	}
+}
+
+/* Адаптив для экранов меньше 1024px */
+@media screen and (max-width: 1024px) {
+	.article-list-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		/* 2 колонки */
+	}
+}
+
+/* Адаптив для экранов меньше 710px */
+@media screen and (max-width: 710px) {
+	.article-list-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+		/* 1 колонка */
+	}
+
+	/* Большие карточки становятся мини */
+	.article-card-large {
+		grid-column: span 1;
+		/* Занимает 1 колонку */
+	}
+}

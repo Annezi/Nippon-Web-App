@@ -1,0 +1,57 @@
+.tag {
+	display: flex;
+	align-items: center;
+	padding: 12px 20px;
+	border: 2px solid;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+/* размеры кнопок */
+.tag-small {
+	height: 28px;
+	color: var(--white-color);
+	margin-right: 8px;
+}
+
+.tag-medium {
+	height: 40px;
+	margin-right: 8px;
+}
+
+.tag-large {
+	height: 42px;
+	margin-right: 8px;
+}
+
+/* темы кнопок */
+.tag-white {
+	border-color: var(--white-color);
+	color: var(--white-color);
+}
+
+.tag-white:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tag-red {
+	border-color: var(--red-color);
+	color: var(--red-color);
+}
+
+.tag-red:hover {
+	background-color: var(--red-color);
+	color: var(--white-color);
+}
+
+@media screen and (max-width: 670px) {
+	.tag {
+		height: 28px;
+	}
+}
+
+@media screen and (max-width : 390px) {
+	.tag {
+		padding: 8px 4px;
+	}
+}

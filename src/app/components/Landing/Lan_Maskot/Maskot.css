@@ -1,0 +1,25 @@
+.Maskot-container {
+	width: 100%;
+	max-width: 900px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Maskot-info {
+	display: flex;
+	flex-direction: column;
+	max-width: 440px;
+	width: 100%;
+	gap: 16px;
+}
+
+@media screen and (max-width: 710px) {
+	.maskot-img img {
+		width: 100px;
+	}
+	.maskot-img {
+		width: 100px;
+	}
+}

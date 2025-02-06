@@ -1,0 +1,12 @@
+.title-placeholder-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 100%;
+	max-width: 1360px;
+	border-radius: 10px;
+	color: var(--white-color);
+	background-color: var(--black-color);
+}

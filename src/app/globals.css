@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+	font-family: 'KOT-Eitai Gothic';
+	src: url('./fonts/KOT-Eitai_Gothic.otf') format('otf'),
+		url('./fonts/KOT-Eitai_Gothic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: bold;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	margin: 0;
+}
+
+:root {
+	--black-color: #000;
+	--black-color-50: rgba(0, 0, 0, 0.5);
+	--white-color: #fff;
+	--dark-gray-color: #1E1E1E;
+	--gray-color: #888888;
+	--light-gray-color: #F3F3F3;
+	--red-color: #C61C1C;
+	--dark-blue-color: #1B0956;
+}
+
+/* new text styles */
+.text-title-1 {
+	font-family: KOT-Eitai Gothic;
+	font-size: 36px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase
+}
+
+.text-subtitle-1 {
+	font-family: KOT-Eitai Gothic;
+	font-size: 24px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase
+}
+
+.text-subtitle-2 {
+	font-family: KOT-Eitai Gothic;
+	font-size: 20px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase
+}
+
+.text-paragraph {
+	font-family: Inter;
+	font-size: 16px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-button {
+	font-family: KOT-Eitai Gothic;
+	font-size: 16px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase
+}
+
+.text-placeholder {
+	font-family: KOT-Eitai Gothic;
+	font-size: 12px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase
+}
+
+
+/* old text styles */
+
+.text-title-l {
+	color: var(--black-color);
+	font-family: KOT-Eitai Gothic;
+	font-size: 78px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-title-l-accent {
+	color: var(--red-color);
+	font-family: KOT-Eitai Gothic;
+	font-size: 78px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-title-m {
+	color: var(--black-color);
+	font-family: KOT-Eitai Gothic;
+	font-size: 36px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-title-s {
+	font-family: KOT-Eitai Gothic;
+	font-size: 16px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-title-s-accent {
+	color: var(--white-color);
+	font-family: KOT-Eitai Gothic;
+	font-size: 16px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-subtitle-l {
+	color: var(--black-color);
+	font-family: KOT-Eitai Gothic;
+	font-size: 32px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-subtitle-l-accent {
+	color: var(--white-color);
+	font-family: KOT-Eitai Gothic;
+	font-size: 32px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-subtitle-m {
+	font-family: KOT-Eitai Gothic;
+	font-size: 24px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-subtitle-s {
+	font-family: KOT-Eitai Gothic;
+	font-size: 20px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-paragraph-l {
+	color: var(--black-color);
+	font-family: Inter;
+	font-size: 24px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-paragraph-m {
+	font-family: Inter;
+	font-size: 20px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-paragraph-s {
+	font-family: Inter;
+	font-size: 16px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+/* accent text */
+
+.japan-text {
+	font-family: KOT-Eitai Gothic;
+	font-size: 16px;
+	color: var(--red-color);
+	text-decoration: none;
+}
+
+.custom-dots {
+	font-family: KOT-Eitai Gothic;
+	font-size: 38px;
+	color: var(--red-color);
+	text-decoration: none;
+	text-align: center;
+	line-height: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.shadow {
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 24px 0px rgba(0, 0, 0, 0.08);
+	;
+}
+
+.LandingBox {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 33px;
+}
+
+.LandingBox>*:not(:last-child, :first-child) {
+	margin-bottom: 80px;
+}
+
+.ContainerBox {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 33px;
+	padding: 0 22px 0 22px;
+}
+
+.ContainerBox>*:not(:last-child, :first-child) {
+	margin-bottom: 80px;
+}
+
+.modalClose {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
+@media screen and (max-width : 768px) {
+	.text-subtitle-l {
+		color: var(--dark-blue-color);
+		font-family: Inter;
+		font-size: 10px;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	.japan-text {
+		color: var(--red-color);
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.text-title-l {
+		font-family: KOT-Eitai Gothic;
+		font-size: 60px;
+		font-style: bold;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
+
+@media screen and (max-width : 670px) {
+	.text-paragraph-l {
+		font-size: 14px;
+	}
+
+	.text-paragraph-m {
+		font-size: 14px;
+	}
+
+	.text-title-l {
+		font-family: KOT-Eitai Gothic;
+		font-size: 32px;
+		font-style: bold;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.text-paragraph-s {
+		font-size: 12px;
+	}
+
+	.text-title-1 {
+		font-size: 24px;
+	}
+	
+	.text-subtitle-1 {
+		font-size: 20px;
+	}
+}

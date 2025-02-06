@@ -1,0 +1,7 @@
+.readMore-container {
+	width: 100%;
+	max-width: 1360px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
