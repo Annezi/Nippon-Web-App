@@ -12,10 +12,10 @@ export default function Footer() {
 		<div className="footer-container">
 			<div className="footer-content-wrapper">
 				<div className="footer-content-img">
-					<img src="./logo_short-menu.svg" alt="-" />
+					<img src="/logo_short-menu.svg" alt="-" />
 				</div>
 				<div className="toTop" onClick={scrollToTop}>
-					<img src="./Icons/Arrow.svg" alt="To Top" />
+					<img src="/Icons/Arrow.svg" alt="To Top" />
 				</div>
 			</div>
 		</div>

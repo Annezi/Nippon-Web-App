@@ -2,7 +2,7 @@
 	"articles": [
 		{
 			"id": 1,
-			"cover": "./Articles/cover-1.png",
+			"cover": "/Articles/cover-1.png",
 			"tags": [
 				"Культура",
 				"мифология"
@@ -33,7 +33,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/1/1-33.jpeg",
+					"src": "/Articles/1/1-33.jpeg",
 					"alt": "Дзасики вараси",
 					"description": "Дзасики вараси"
 				},
@@ -51,7 +51,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/1/2-29.jpeg",
+					"src": "/Articles/1/2-29.jpeg",
 					"alt": "Сёдзё",
 					"description": "Сёдзё"
 				},
@@ -69,7 +69,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/1/3-27.jpeg",
+					"src": "/Articles/1/3-27.jpeg",
 					"alt": "Оуни",
 					"description": "Оуни"
 				},
@@ -87,7 +87,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/1/4-28.jpeg",
+					"src": "/Articles/1/4-28.jpeg",
 					"alt": "Каппа",
 					"description": "Каппа"
 				},
@@ -105,7 +105,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/1/8-12.jpeg",
+					"src": "/Articles/1/8-12.jpeg",
 					"alt": "Хахакигами",
 					"description": "Хахакигами"
 				}
@@ -113,7 +113,7 @@
 		},
 		{
 			"id": 2,
-			"cover": "./Articles/cover-2.png",
+			"cover": "/Articles/cover-2.png",
 			"tags": [
 				"еда",
 				"рецепты"
@@ -140,7 +140,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/2/1.jpg",
+					"src": "/Articles/2/1.jpg",
 					"alt": "Сковорода-такоячница",
 					"description": "Сковорода-такоячница"
 				},
@@ -150,7 +150,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/2/2.jpg",
+					"src": "/Articles/2/2.jpg",
 					"alt": "Такояки с топпингом",
 					"description": "Такояки с топпингом"
 				},
@@ -160,7 +160,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/2/3.png",
+					"src": "/Articles/2/3.png",
 					"alt": "Дзямбо такояки",
 					"description": "«Дзямбо такояки» по сравнению с обычным такояки"
 				},
@@ -174,7 +174,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/2/4.jpg",
+					"src": "/Articles/2/4.jpg",
 					"alt": "«Айдзуя»",
 					"description": "«Айдзуя»"
 				},
@@ -184,7 +184,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/2/5.jpg",
+					"src": "/Articles/2/5.jpg",
 					"alt": "Тёбояки",
 					"description": "Тёбояки"
 				},
@@ -198,7 +198,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/2/6.png",
+					"src": "/Articles/2/6.png",
 					"alt": "Такояки",
 					"description": "Такояки"
 				},
@@ -210,7 +210,7 @@
 		},
 		{
 			"id": 3,
-			"cover": "./Articles/cover-3.png",
+			"cover": "/Articles/cover-3.png",
 			"tags": [
 				"Культура",
 				"Язык"
@@ -233,7 +233,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/3/Одзисан-гокко-1.png",
+					"src": "/Articles/3/Одзисан-гокко-1.png",
 					"alt": "Переписка",
 					"description": "Очень увлекательное начало диалога"
 				},
@@ -243,7 +243,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/3/Одзисан-гокко-2.jpg",
+					"src": "/Articles/3/Одзисан-гокко-2.jpg",
 					"alt": "Некоторые фразы",
 					"description": "Если что, «покормить» здесь не в значении «приготовить», а «покормить с ложечки (или вернее сказать с палочек)». К счастью, нантяттэ на месте, а значит это всего лишь шутка. Да ведь?.."
 				},
@@ -257,7 +257,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/3/Одзисан-гокко-3.jpg",
+					"src": "/Articles/3/Одзисан-гокко-3.jpg",
 					"alt": "Настольная игра",
 					"description": "«Сообщения дядечки»"
 				}
@@ -265,7 +265,7 @@
 		},
 		{
 			"id": 4,
-			"cover": "./Articles/cover-4.png",
+			"cover": "/Articles/cover-4.png",
 			"tags": [
 				"аниме",
 				"рекомендации"
@@ -296,7 +296,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/4/1.jpg",
+					"src": "/Articles/4/1.jpg",
 					"alt": "Обложка",
 					"description": "Обложка «Так сложно любить отаку»"
 				},
@@ -314,7 +314,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/4/2.jpg",
+					"src": "/Articles/4/2.jpg",
 					"alt": "Обложка",
 					"description": "Обложка «Хоримия»"
 				},
@@ -332,7 +332,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/4/3.jpg",
+					"src": "/Articles/4/3.jpg",
 					"alt": "Обложка",
 					"description": "Обложка «Эта фарфоровая кукла влюбилась»"
 				}
@@ -340,7 +340,7 @@
 		},
 		{
 			"id": 5,
-			"cover": "./Articles/cover-5.png",
+			"cover": "/Articles/cover-5.png",
 			"tags": [
 				"еда",
 				"рекомендации"
@@ -363,7 +363,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/5/1.jpg",
+					"src": "/Articles/5/1.jpg",
 					"alt": "Контейнер",
 					"description": "Один из видов контейнеров для бэнто"
 				},
@@ -381,7 +381,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/5/2.jpg",
+					"src": "/Articles/5/2.jpg",
 					"alt": "Бэнто",
 					"description": "Кто-то явно постарался над этим бэнто"
 				},
@@ -395,7 +395,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/5/3.jpeg",
+					"src": "/Articles/5/3.jpeg",
 					"alt": "Бэнто",
 					"description": "Вариант подачи бэнто"
 				},
@@ -409,7 +409,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/5/4.jpg",
+					"src": "/Articles/5/4.jpg",
 					"alt": "Бэнто",
 					"description": "И такой бэнто имеет место быть"
 				},
@@ -427,7 +427,7 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/5/5.png",
+					"src": "/Articles/5/5.png",
 					"alt": "Бэнто",
 					"description": "Просто и сбалансированно"
 				}
@@ -435,7 +435,7 @@
 		},
 		{
 			"id": 6,
-			"cover": "./Articles/cover-1.png",
+			"cover": "/Articles/cover-1.png",
 			"tags": [
 				"Культура",
 				"Праздники"
@@ -490,19 +490,19 @@
 				},
 				{
 					"type": "image",
-					"src": "./Articles/Essay_img1.jpg",
+					"src": "/Articles/Essay_img1.jpg",
 					"alt": "Фраппе со вкусом жареной курочки",
 					"description": "Сеть комбини FamilyMart в 2022 году объявили о выпуске в продажу с 1 апреля фраппе со вкусом жареной курочки"
 				},
 				{
 					"type": "image",
-					"src": "./Articles/Essay_img2.jpg",
+					"src": "/Articles/Essay_img2.jpg",
 					"alt": "Вёдра с куриными косточками",
 					"description": "В 2019 году японское подразделение KFC объявило о запуске продаж вёдер с куриными косточками"
 				},
 				{
 					"type": "image",
-					"src": "./Articles/Essay_img3.jpg",
+					"src": "/Articles/Essay_img3.jpg",
 					"alt": "Fanta с болгарским перцем",
 					"description": "В 2018 году на 1 апреля Fanta в Японии анонсировала запуск напитка со вкусом болгарского перца"
 				}

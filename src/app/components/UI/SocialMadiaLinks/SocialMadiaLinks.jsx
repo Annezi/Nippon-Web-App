@@ -42,20 +42,20 @@ export default function SocialMadiaLinks() {
 	return (
 		<div className="share-buttons">
 			<div className="share-button" onClick={handleLinkClick}>
-				<img src="./Icons/Icon-link.svg" alt="Link" />
+				<img src="/Icons/Icon-link.svg" alt="Link" />
 			</div>
 			<div className="share-button" onClick={handleVKClick}>
-				<img src="./Icons/Icon-vk.svg" alt="VK" />
+				<img src="/Icons/Icon-vk.svg" alt="VK" />
 			</div>
 			<div className="share-button" onClick={handleTgClick}>
-				<img src="./Icons/Icon-tg.svg" alt="Telegram" />
+				<img src="/Icons/Icon-tg.svg" alt="Telegram" />
 			</div>
 
 			{showModal && (
 				<div className="modal">
 					<div className="modalLink-content">
 						<div className="modalClose" onClick={() => setShowModal(false)}>
-							<img src="./Icons/Cross.svg" alt="Close" />
+							<img src="/Icons/Cross.svg" alt="Close" />
 						</div>
 						<div className="modalLink-info">
 							<div className="modalLink-text">
