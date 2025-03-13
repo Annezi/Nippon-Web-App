@@ -11,11 +11,17 @@ export default function Subscrib({ text }) {
 	const handleSubscribe = () => {
 		if (!name.trim() || !email.trim()) {
 			alert('Пожалуйста, заполните все поля!');
-			return; 
+			return;
 		}
 
 		setIsSubscribed(true);
 		console.log('Подписка:', { name, email });
+
+		// Отправка события в Яндекс.Метрику
+		if (typeof ym !== 'undefined') {
+			ym(100267604, 'reachGoal', 'subscribe'); // Цель "Подписка"
+			ym(100267604, 'reachGoal', 'subscribe_button_click'); // Цель "Клик по кнопке"
+		}
 
 		setName('');
 		setEmail('');
