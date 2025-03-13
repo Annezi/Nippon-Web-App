@@ -32,7 +32,7 @@ export default function Navigation() {
 	}, [pathname]);
 
 	useEffect(() => {
-		const scrollableElements = document.querySelectorAll('.scrollable'); // Пример для элементов с классом .scrollable
+		const scrollableElements = document.querySelectorAll('.scrollable');
 		if (isAlarmPopupOpen) {
 			document.body.style.overflow = 'hidden';
 			document.documentElement.style.overflow = 'hidden';
@@ -60,11 +60,17 @@ export default function Navigation() {
 		setIsAlarmPopupOpen(false);
 	};
 
+	const handleLogoClick = () => {
+		if (typeof ym !== 'undefined') {
+			ym(100267604, 'reachGoal', 'logo_click');
+		}
+	};
+
 	return (
 		<div className="headers-container">
 			<div className="header shadow">
 				<div className="header-logo">
-					<Link href="/" className="header-logo">
+					<Link href="/" className="header-logo" onClick={handleLogoClick}>
 						<img src="/logo_short-menu.svg" alt="Logo" />
 					</Link>
 				</div>
