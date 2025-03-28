@@ -27,3 +27,26 @@
 	background-color: var(--white-color);
 	color: var(--red-color);
 }
+
+.button-white-outline {
+	background-color: transparent;
+	color: var(--white-color);
+	border: 2px solid var(--white-color);
+}
+
+.button-white-outline:hover {
+	background-color: var(--white-color);
+	color: var(--red-color);
+	border: 2px solid var(--white-color);
+}
+
+.button-red-outline {
+	background-color: transparent;
+	color: var(--red-color);
+	border: 2px solid var(--red-color);
+}
+
+.button-red-outline:hover {
+	background-color: var(--red-color);
+	color: var(--white-color);
+}

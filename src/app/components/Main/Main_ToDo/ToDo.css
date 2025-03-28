@@ -6,36 +6,32 @@
 	flex-direction: column;
 	gap: 20px;
 	scroll-snap-align: start;
+	padding: 0 20px 0 20px;
 }
 
 .todo-banners-wrapper {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* 2 колонки по умолчанию */
 	gap: 20px;
-	overflow-x: auto;
-}
-
-/* Отступ для первого элемента */
-.todo-banners-wrapper>*:first-child {
-	margin-left: 20px;
-	/* Отступ от левого края */
-}
-
-/* Отступ для последнего элемента */
-.todo-banners-wrapper>*:last-child {
-	margin-right: 20px;
-	/* Отступ от правого края */
 }
 
 /* Стили для мобильной версии */
 @media screen and (max-width: 768px) {
 	.todo-banners-wrapper {
-		flex-wrap: nowrap;
-		padding-bottom: 10px;
+		grid-auto-flow: column;
+		/* Элементы в строку */
+		overflow-x: auto;
+		grid-template-columns: none;
+		/* Отменяем грид-колонки */
 	}
 
 	/* Отступы для TitlePlaceholder только в мобильной версии */
 	.todo-box .title-placeholder {
-		padding-left: 20px;
-		padding-right: 20px;
+		grid-auto-flow: column;
+		/* Элементы в строку */
+		overflow-x: auto;
+		grid-template-columns: none;
+		/* Отменяем грид-колонки */
 	}
 }
