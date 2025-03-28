@@ -19,10 +19,9 @@ export default function Navigation() {
 
 		const shouldOpenPopup =
 			pathname === '/study' ||
-			pathname === '/where-to-go' ||
-			pathname === '/travelling' ||
-			pathname === '/about' ||
-			pathname === '/profile';
+			pathname === '/what-to-do' ||
+			pathname === '/tests' ||
+			pathname === '/about' ;
 
 		if (shouldOpenPopup) {
 			setIsAlarmPopupOpen(true);
@@ -76,16 +75,16 @@ export default function Navigation() {
 				</div>
 				<div className="navbar">
 					<div className="nav-links text-subtitle-s">
-						<Link href="/where-to-go">Что делать</Link>
+						<Link href="/what-to-do">Что делать</Link>
 					</div>
 					<div className="nav-links text-subtitle-s">
-						<Link href="/study">Тесты</Link>
+						<Link href="/tests">Тесты</Link>
 					</div>
 					<div className="nav-links text-subtitle-s">
 						<Link href="/articles">Статьи</Link>
 					</div>
 					<div className="nav-links text-subtitle-s">
-						<Link href="/travelling">Новости</Link>
+						<Link href="/news">Новости</Link>
 					</div>
 					<div className="nav-links text-subtitle-s">
 						<Link href="/about">О нас</Link>
@@ -107,7 +106,7 @@ export default function Navigation() {
 							<div className="text-subtitle-l">Что делать</div>
 						</div>
 					</Link>
-					<Link href="/study">
+					<Link href="/tests">
 						<div className="menu-button">
 							<img src="/Icons/Test.svg" alt="img" />
 							<div className="text-subtitle-l">Тесты</div>
@@ -119,7 +118,7 @@ export default function Navigation() {
 							<div className="text-subtitle-l">Статьи</div>
 						</div>
 					</Link>
-					<Link href="/travelling">
+					<Link href="/news">
 						<div className="menu-button">
 							<img src="/Icons/News.svg" alt="img" />
 							<div className="text-subtitle-l">Новости</div>

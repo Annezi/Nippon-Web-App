@@ -20,7 +20,12 @@ export default function Info() {
 				</div>
 				<div className="lan-main-card">
 					<div className="lan-main-card-text text-subtitle-1">СТАТЬЯ ДНЯ</div>
-					<ArticleList articles={articles.articles} filteredIds={[5]} shadow={false} />
+					<ArticleList
+						articles={articles.articles}
+						renderStyle="manual"
+						manualConfig={[{ id: 5, variant: "custom" }]}
+						filteredIds={[5]}
+					/>
 				</div>
 				<div className="lan-right-card">
 					<div className="text-subtitle-1">СЛОВО ДНЯ</div>
