@@ -4,7 +4,6 @@ import "./what-to-do.css";
 import "../components/Main/Main_ToDo/ToDo.css"
 import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
-import news from '../database/newsData.json';
 import Footer from "../components/Navigation/Footer/Footer";
 import SighBanner from "../components/Other/SignBanner/SignBanner";
 import places from "../database/placeData.json";
