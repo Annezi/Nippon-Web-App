@@ -6,21 +6,40 @@ import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
 import Footer from "../components/Navigation/Footer/Footer";
 import SighBanner from "../components/Other/SignBanner/SignBanner";
-import places from "../database/placeData.json";
+import places from "../database/wtd/placeData.json";
 import ArticleList from "../components/Articles/Article_List/ArticleList";
 import TitlePlaceholder from "../components/UI/TitlePlaceholder/TitlePlaceholder";
+import WTDCard from "../components/UI/WTDCard/WTDCard";
+import data from "../database/wtd/whatToDoSectionsData.json";
 
-export default function NewsPage() {
+// Добавляем проверку данных и логирование
+const whatToDoSections = data?.sections ? data : { sections: [] };
+console.log('Loaded sections data:', whatToDoSections.sections);
+
+export default function WhatToDoPage() {
 	return (
 		<div className="LandingBox">
 			<Navbar />
 			<TopSections
 				displayMode="solo"
 				soloImage="/SectionCover/what-to-do.png"
-				soloText="что делать — ваш персональный гид по миру японии. у нас есть крутой тест, который подскажет, чем именно заняться. Ответьте на несколько вопросов, и мы подберём для вас идеальное аниме, мангу или место, куда стоит отправиться прямо сейчас."
+				soloText="что делать — ваш персональный гид по миру японии. у нас есть крутой тест, который подскажет, чем именно заняться. Ответьте на несколько вопросов, и мы подберём для вас идеальное аниме, мангу или место, куда стоит отправиться прямо сейчас."
 				button_text="узнать, что поделать"
 				onButtonClick={() => console.log('Click')}
 			/>
+
+			{/* Основной блок с карточками разделов */}
+			<div className="wtd-cards-container">
+				{whatToDoSections.sections?.map((section) => (
+					<WTDCard
+						key={section.id}
+						id={section.id}
+						cover={section.cover}
+						description={section.description}
+						contentType={section.contentType} // Добавляем передачу contentType
+					/>
+				))}
+			</div>
 
 			<div className="month-best-box">
 				<TitlePlaceholder text="лучшие японские места в россии" />
@@ -53,6 +72,7 @@ export default function NewsPage() {
 						button_text="Покраснеть и попищать" />
 				</div>
 			</div>
+
 			<div className="todo-box">
 				<TitlePlaceholder className="title-placeholder" text="подборки манг" />
 				<div className="todo-banners-wrapper">
@@ -74,6 +94,7 @@ export default function NewsPage() {
 						button_text="Спасти мир" />
 				</div>
 			</div>
+
 			<Footer />
 		</div>
 	);

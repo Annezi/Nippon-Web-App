@@ -1,0 +1,16 @@
+.wtd-cards-container {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	flex-wrap: wrap;
+	padding: 40px 20px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.wtd-cards-container {
+		flex-direction: column;
+		align-items: center;
+	}
+}

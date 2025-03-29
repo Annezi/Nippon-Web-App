@@ -2,7 +2,7 @@
 import "../globals.css";
 import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
-import ArticleList from '../components/Articles/Article_List/ArticleList'; // Используем ArticleList
+import ArticleList from '../components/Articles/Article_List/ArticleList'; 
 import news from '../database/newsData.json';
 import Footer from "../components/Navigation/Footer/Footer";
 import MonthBest from "../components/Main/Main_MonthBest/MonthBest";
