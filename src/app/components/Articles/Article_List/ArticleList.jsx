@@ -18,6 +18,7 @@ export default function ArticleList({
 }) {
 	const [isMobile, setIsMobile] = useState(false);
 	const [visibleCount, setVisibleCount] = useState(limit);
+	
 
 	useEffect(() => {
 		setIsMobile(typeof window !== "undefined" && window.innerWidth <= 710);

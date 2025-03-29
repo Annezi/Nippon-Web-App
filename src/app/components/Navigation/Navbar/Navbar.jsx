@@ -20,7 +20,7 @@ export default function Navigation() {
 		const shouldOpenPopup =
 			pathname === '/study' ||
 			pathname === '/what-to-do' ||
-			pathname === '/tests' ||
+			pathname === '/quizes' ||
 			pathname === '/about' ;
 
 		if (shouldOpenPopup) {
@@ -78,7 +78,7 @@ export default function Navigation() {
 						<Link href="/what-to-do">Что делать</Link>
 					</div>
 					<div className="nav-links text-subtitle-s">
-						<Link href="/tests">Тесты</Link>
+						<Link href="/quizes">Тесты</Link>
 					</div>
 					<div className="nav-links text-subtitle-s">
 						<Link href="/articles">Статьи</Link>
@@ -106,7 +106,7 @@ export default function Navigation() {
 							<div className="text-subtitle-l">Что делать</div>
 						</div>
 					</Link>
-					<Link href="/tests">
+					<Link href="/quizes">
 						<div className="menu-button">
 							<img src="/Icons/Test.svg" alt="img" />
 							<div className="text-subtitle-l">Тесты</div>

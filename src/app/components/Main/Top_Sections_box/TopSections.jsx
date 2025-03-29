@@ -3,6 +3,7 @@ import './TopSections.css';
 import ArticleList from "../../Articles/Article_List/ArticleList";
 import articles from "../../../database/articlesData.json";
 import news from "../../../database/newsData.json";
+import quiz from "../../../database/quizData.json";
 import places from "../../../database/wtd/placeData.json";
 import Button from "../../UI/Button/Button";
 
@@ -10,6 +11,7 @@ const CONTENT_DATA = {
 	articles: articles.articles,
 	news: news.news,
 	places: places.places,
+	quiz: quiz.quiz,
 };
 
 export default function TopSections({
