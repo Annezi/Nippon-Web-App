@@ -22,7 +22,7 @@ export default function Navigation() {
 		const shouldOpenPopup =
 			pathname === '/study' ||
 			pathname === '/what-to-do' ||
-			pathname === '/quizes' ||
+			pathname === '/quiz' ||
 			pathname === '/about';
 
 		if (shouldOpenPopup) {
@@ -79,8 +79,8 @@ export default function Navigation() {
 					<div className={`nav-links text-subtitle-s ${isActive('/what-to-do') ? 'active' : ''}`}>
 						<Link href="/what-to-do">Что делать</Link>
 					</div>
-					<div className={`nav-links text-subtitle-s ${isActive('/quizes') ? 'active' : ''}`}>
-						<Link href="/quizes">Тесты</Link>
+					<div className={`nav-links text-subtitle-s ${isActive('/quiz') ? 'active' : ''}`}>
+						<Link href="/quiz">Тесты</Link>
 					</div>
 					<div className={`nav-links text-subtitle-s ${isActive('/articles') ? 'active' : ''}`}>
 						<Link href="/articles">Статьи</Link>
@@ -108,8 +108,8 @@ export default function Navigation() {
 							<div className="text-subtitle-l">Что делать</div>
 						</div>
 					</Link>
-					<Link href="/quizes">
-						<div className={`menu-button ${isActive('/quizes') ? 'active' : ''}`}>
+					<Link href="/quiz">
+						<div className={`menu-button ${isActive('/quiz') ? 'active' : ''}`}>
 							<img src="/Icons/Test.svg" alt="img" />
 							<div className="text-subtitle-l">Тесты</div>
 						</div>
