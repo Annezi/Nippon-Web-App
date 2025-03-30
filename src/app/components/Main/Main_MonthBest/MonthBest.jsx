@@ -10,7 +10,13 @@ export default function MonthBest() {
 			<ArticleList
 				articles={articles.articles}
 				renderStyle="manual"
-				manualConfig={[1, 2, 3, 4].map(id => ({ id, variant: "mini" }))}
+				manualConfig={[
+					{ id: 15, variant: "mini" },
+					{ id: 16, variant: "mini" },
+					{ id: 17, variant: "mini" },
+					{ id: 18, variant: "mini" }
+				]}
+				limit={4}
 			/>
 		</div>
 	);

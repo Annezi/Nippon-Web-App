@@ -22,7 +22,7 @@
 }
 
 .header-logo {
-	display: block; 
+	display: block;
 }
 
 .header-logo img {
@@ -57,6 +57,17 @@ a:visited {
 
 .mobile-navbar {
 	display: none;
+}
+
+/* Для десктопного меню */
+.nav-links.active a {
+	color: var(--red-color);
+	/* или конкретный цвет, например #FF0000 */
+}
+
+/* Для мобильного меню */
+.menu-button.active .text-subtitle-l {
+	color: var(--red-color);
 }
 
 @media screen and (max-width : 768px) {

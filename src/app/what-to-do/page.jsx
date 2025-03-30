@@ -10,7 +10,7 @@ import places from "../database/wtd/placeData.json";
 import ArticleList from "../components/Articles/Article_List/ArticleList";
 import TitlePlaceholder from "../components/UI/TitlePlaceholder/TitlePlaceholder";
 import WTDCard from "../components/UI/WTDCard/WTDCard";
-import data from "../database/wtd/whatToDoSectionsData.json";
+import data from "../database/whatToDoData.json";
 
 // Добавляем проверку данных и логирование
 const whatToDoSections = data?.sections ? data : { sections: [] };
@@ -22,7 +22,7 @@ export default function WhatToDoPage() {
 			<Navbar />
 			<TopSections
 				displayMode="solo"
-				soloImage="/SectionCover/what-to-do.png"
+				soloImage="/OtherImg/cover-section-1.jpg"
 				soloText="что делать — ваш персональный гид по миру японии. у нас есть крутой тест, который подскажет, чем именно заняться. Ответьте на несколько вопросов, и мы подберём для вас идеальное аниме, мангу или место, куда стоит отправиться прямо сейчас."
 				button_text="узнать, что поделать"
 				onButtonClick={() => console.log('Click')}
@@ -36,7 +36,8 @@ export default function WhatToDoPage() {
 						id={section.id}
 						cover={section.cover}
 						description={section.description}
-						contentType={section.contentType} // Добавляем передачу contentType
+						contentType={section.contentType}
+						url={section.url} 
 					/>
 				))}
 			</div>
@@ -63,11 +64,11 @@ export default function WhatToDoPage() {
 						description="аниме про волшебников"
 						button_text="Наколдовать проду" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-1.png"
+						cover="./OtherImg/SignBanner-cover-3.png"
 						description="аниме про попаданцев"
 						button_text="Переродиться" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-2.png"
+						cover="./OtherImg/SignBanner-cover-4.png"
 						description="романтические аниме"
 						button_text="Покраснеть и попищать" />
 				</div>
@@ -77,19 +78,19 @@ export default function WhatToDoPage() {
 				<TitlePlaceholder className="title-placeholder" text="подборки манг" />
 				<div className="todo-banners-wrapper">
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-1.png"
+						cover="./OtherImg/SignBanner-cover-5.png"
 						description="психологические сёнены"
 						button_text="Стать психом" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-2.png"
+						cover="./OtherImg/SignBanner-cover-6.png"
 						description="исекай-манги"
 						button_text="Стать магом 100lvl" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-1.png"
+						cover="./OtherImg/SignBanner-cover-7.png"
 						description="сёдзе манги"
 						button_text="Романтично поплакать" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-2.png"
+						cover="./OtherImg/SignBanner-cover-8.png"
 						description="супергеройские манги"
 						button_text="Спасти мир" />
 				</div>

@@ -7,7 +7,17 @@ export default function ReadMore() {
 	return (
 		<div className="readMore-container">
 			<div className="text-title-m">Читайте дальше</div>
-			<ArticleList articles={articles.articles} filteredIds={[1, 2, 3, 4, 5]} limit={4}/>
+			<ArticleList
+				articles={articles.articles}
+				renderStyle="manual"
+				manualConfig={[
+					{ id: 15, variant: "mini" },
+					{ id: 16, variant: "mini" },
+					{ id: 17, variant: "mini" },
+					{ id: 18, variant: "mini" }
+				]}
+				limit={4}
+			/>
 		</div>
 	)
 }

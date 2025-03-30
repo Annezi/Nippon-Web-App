@@ -14,11 +14,12 @@ export default function ArticleList({
 	limit = 14,
 	showLoadMore = false,
 	onLoadMore = () => { },
-	contentType = "articles" // Новый параметр для типа контента
+	contentType = "articles",
+	url = null // Новый параметр для типа контента
 }) {
 	const [isMobile, setIsMobile] = useState(false);
 	const [visibleCount, setVisibleCount] = useState(limit);
-	
+	console.log(articles);
 
 	useEffect(() => {
 		setIsMobile(typeof window !== "undefined" && window.innerWidth <= 710);
@@ -71,6 +72,7 @@ export default function ArticleList({
 	const isSingleCard = cardVariants.length === 1;
 	const hasMoreArticles = showLoadMore && filteredArticles.length > visibleCount;
 
+
 	const handleLoadMore = () => {
 		const newCount = visibleCount + limit;
 		setVisibleCount(newCount);
@@ -81,14 +83,23 @@ export default function ArticleList({
 		<div className="article-list">
 			<div className={`article-list-wrapper ${isSingleCard ? "no-grid" : ""}`}>
 				{cardVariants.map(({ article, variant, isCustom, basePath }) => {
+					var hr = "";
+					if (url != null) {
+						hr = `${url}`
+					} else {
+						hr = `${basePath}${article.id}`
+					}
+					if (article.url) {
+						hr = article.url
+					}
 					// Для мобильных все карточки mini, кроме явно указанных custom
 					const finalVariant = isMobile && !isCustom ? "mini" : variant;
 					const gridClass = `article-card-${finalVariant}`;
-
+					// console.log("hr: ",hr)
 					return (
 						<Link
 							key={article.id}
-							href={`${basePath}${article.id}`} // Используем динамический путь
+							href={hr}
 							onClick={() => window.scrollTo(0, 0)}
 							className={`article-card-link ${gridClass}`}
 						>

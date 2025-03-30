@@ -74,7 +74,7 @@ export default function TopSections({
 								</div>
 							)}
 						
-							<Button theme="red-outline" text={ button_text } />
+							<Button theme="red-outline" text={ button_text } onClick={onButtonClick} />
 						
 					</div>
 				)}
