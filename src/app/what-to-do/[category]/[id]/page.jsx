@@ -1,8 +1,9 @@
+
 import WTDPageDetailClient from "./WTDPageClient";
 import WTDPageData from "../../../database/whatToDoData.json";
-import mangaData from "../../../database/wtd/mangaData.json";
-import animeData from "../../../database/wtd/animeData.json";
-import placeData from "../../../database/wtd/placeData.json";
+import mangaData from "../../../database/mangaData.json";
+import animeData from "../../../database/animeData.json";
+import placeData from "../../../database/placeData.json";
 
 // async function getWTDPageById(id) {
 // 	const WTDPageId = parseInt(id);
@@ -28,11 +29,11 @@ async function getDataFromDatabase(id, category) {
 	}
 }
 
-
 export async function generateMetadata({ params }) {
 	const { category, id } = await params;
 	const WTDPage = await getDataFromDatabase(id, category);
 	console.log(WTDPage);
+	console.log("Metadata WTDPage:", WTDPage);
 	return {
 		title: WTDPage?.title || "Новость не найдена",
 		description: WTDPage?.description || "",

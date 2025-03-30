@@ -1,8 +1,9 @@
+
 // import CategoryDetailClient from "./CategoryDetailClient";
 // import categoryData from "../../database/categoryData.json";
-import mangaData from "../../database/wtd/mangaData.json";
-import animeData from "../../database/wtd/animeData.json";
-import placeData from "../../database/wtd/placeData.json";
+import mangaData from "../../database/mangaData.json";
+import animeData from "../../database/animeData.json";
+import placeData from "../../database/placeData.json";
 import whatToDoData from "../../database/whatToDoData.json";
 import WTDCategoryClient from "./WTDCategoryClient";
 

@@ -14,11 +14,11 @@ export default function ArticlesPage() {
 			<TopSections sections={[
 				{
 					title: "ПОСМЕЯТЬСЯ",
-					articleId: 5
+					articleId: 87
 				},
 				{
 					title: "ПОУМНИЧАТЬ",
-					articleId: 2
+					articleId: 88
 				}
 			]} />
 

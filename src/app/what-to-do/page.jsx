@@ -6,13 +6,12 @@ import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
 import Footer from "../components/Navigation/Footer/Footer";
 import SighBanner from "../components/Other/SignBanner/SignBanner";
-import places from "../database/wtd/placeData.json";
+import places from "../database/placeData.json";
 import ArticleList from "../components/Articles/Article_List/ArticleList";
 import TitlePlaceholder from "../components/UI/TitlePlaceholder/TitlePlaceholder";
 import WTDCard from "../components/UI/WTDCard/WTDCard";
 import data from "../database/whatToDoData.json";
 
-// Добавляем проверку данных и логирование
 const whatToDoSections = data?.sections ? data : { sections: [] };
 console.log('Loaded sections data:', whatToDoSections.sections);
 
@@ -25,10 +24,11 @@ export default function WhatToDoPage() {
 				soloImage="/OtherImg/cover-section-1.jpg"
 				soloText="что делать — ваш персональный гид по миру японии. у нас есть крутой тест, который подскажет, чем именно заняться. Ответьте на несколько вопросов, и мы подберём для вас идеальное аниме, мангу или место, куда стоит отправиться прямо сейчас."
 				button_text="узнать, что поделать"
-				onButtonClick={() => console.log('Click')}
+				onButtonClick={() => {
+					window.location.href = '/quiz/92';
+				}}
 			/>
 
-			{/* Основной блок с карточками разделов */}
 			<div className="wtd-cards-container">
 				{whatToDoSections.sections?.map((section) => (
 					<WTDCard
@@ -37,7 +37,7 @@ export default function WhatToDoPage() {
 						cover={section.cover}
 						description={section.description}
 						contentType={section.contentType}
-						url={section.url} 
+						url={section.url}
 					/>
 				))}
 			</div>
@@ -47,7 +47,7 @@ export default function WhatToDoPage() {
 				<ArticleList
 					articles={places.places}
 					renderStyle="manual"
-					filteredIds={[1, 2, 3, 4]}
+					filteredIds={[73, 74, 75, 76]}
 					contentType="places"
 				/>
 			</div>

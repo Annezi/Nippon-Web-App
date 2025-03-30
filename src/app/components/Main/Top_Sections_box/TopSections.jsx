@@ -4,7 +4,7 @@ import ArticleList from "../../Articles/Article_List/ArticleList";
 import articles from "../../../database/articlesData.json";
 import news from "../../../database/newsData.json";
 import quiz from "../../../database/quizData.json";
-import places from "../../../database/wtd/placeData.json";
+import places from "../../../database/placeData.json";
 import Button from "../../UI/Button/Button";
 
 const CONTENT_DATA = {

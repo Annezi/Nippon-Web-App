@@ -15,7 +15,7 @@ export default function ArticleList({
 	showLoadMore = false,
 	onLoadMore = () => { },
 	contentType = "articles",
-	url = null // Новый параметр для типа контента
+	url = null 
 }) {
 	const [isMobile, setIsMobile] = useState(false);
 	const [visibleCount, setVisibleCount] = useState(limit);

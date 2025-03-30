@@ -23,7 +23,7 @@ export default function Info() {
 					<ArticleList
 						articles={articles.articles}
 						renderStyle="manual"
-						manualConfig={[{ id: 5, variant: "custom" }]}
+						manualConfig={[{ id: 91, variant: "custom" }]}
 						filteredIds={[5]}
 					/>
 				</div>

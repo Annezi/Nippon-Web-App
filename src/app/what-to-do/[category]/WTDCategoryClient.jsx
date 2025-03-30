@@ -23,6 +23,8 @@ export default async function WTDCategoryClient({ section }) {
   const data = getDataByContentType(section.contentType);
   // console.log('Loaded data:', data);
 
+  
+
   return (
     <div className="LandingBox">
       <Navbar />

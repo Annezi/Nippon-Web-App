@@ -13,8 +13,8 @@ export default function QuizPage() {
 			<Navbar />
 			<TopSections
 				sections={[
-					{ title: "кто я?", articleId: 1 },
-					{ title: "самый умный", articleId: 2 }
+					{ title: "кто я?", articleId: 43 },
+					{ title: "самый умный", articleId: 44 }
 				]}
 				contentType="quiz"
 			/>

@@ -13,8 +13,8 @@ export default function NewsPage() {
 			<Navbar />
 			<TopSections
 				sections={[
-					{ title: "ПОВСЕДНЕВНОСТЬ", articleId: 1 },
-					{ title: "КРИМИНАЛ", articleId: 2 }
+					{ title: "ПОВСЕДНЕВНОСТЬ", articleId: 89 },
+					{ title: "КРИМИНАЛ", articleId: 90 }
 				]}
 				contentType="news"
 			/>

@@ -8,11 +8,11 @@ export default function ToDo() {
 			<TitlePlaceholder className="title-placeholder" text="что делать?" />
 			<div className="todo-banners-wrapper">
 				<SighBanner
-					cover="./OtherImg/SignBanner-cover-1.png"
+					cover="./OtherImg/cover-section-5.jpg"
 					description="популярные японские места в россии"
 					button_text="Решить куда пойти" />
 				<SighBanner
-					cover="./OtherImg/SignBanner-cover-2.png"
+					cover="./OtherImg/cover-section-6.jpg"
 					description="зимний сезон аниме"
 					button_text="Посмотреть новинки" />
 			</div>

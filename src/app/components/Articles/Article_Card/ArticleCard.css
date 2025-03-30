@@ -6,7 +6,12 @@
 	gap: 8px;
 	box-sizing: border-box;
 	border-radius: 8px;
+	transition: transform 0.2s;
 	overflow: hidden;
+}
+
+.article-card:hover {
+	transform: translateY(-5px);
 }
 
 /* Стили для мини-карточки */

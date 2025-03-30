@@ -1,6 +1,6 @@
-import placeData from '../../database/wtd/placeData.json';
-import animeData from '../../database/wtd/animeData.json';
-import mangaData from '../../database/wtd/mangaData.json';
+import placeData from '../../database/placeData.json';
+import animeData from '../../database/animeData.json';
+import mangaData from '../../database/mangaData.json';
 
 export const getDataByContentType = (contentType) => {
 	try {

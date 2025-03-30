@@ -16,7 +16,7 @@ export default function Essay({ content }) {
 				} else if (block.type === "image") {
 					return (
 						<div key={index} className="img-container">
-							<img src={block.src} alt={block.alt} />
+							<img src={block.src} alt={block.alt} className="img-container"/>
 							<div className="img-description text-paragraph-s">{block.description}</div>
 						</div>
 					);

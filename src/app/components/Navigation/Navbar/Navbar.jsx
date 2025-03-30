@@ -1,19 +1,25 @@
 "use client";
-
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import "./Navbar.css";
 import AlarmPopup from '../../UI/Popups/Alarm/Alarm_Popup';
 
+
+const SearchIcon = '/Icons/Search.svg';
+const CloseIcon = '/Icons/Cross.svg';
+
 export default function Navigation() {
 	const [isAlarmPopupOpen, setIsAlarmPopupOpen] = useState(false);
 	const [isInitialRender, setIsInitialRender] = useState(true);
+	const [isSearchPage, setIsSearchPage] = useState(false);
 	const pathname = usePathname();
 
 	const isActive = (path) => pathname === path;
 
 	useEffect(() => {
+		setIsSearchPage(pathname === '/search');
+
 		if (isInitialRender) {
 			setIsInitialRender(false);
 			return;
@@ -23,6 +29,7 @@ export default function Navigation() {
 			pathname === '/study' ||
 			pathname === '/what-to-do' ||
 			pathname === '/quiz' ||
+			pathname === '/search' ||
 			pathname === '/about';
 
 		if (shouldOpenPopup) {
@@ -93,16 +100,23 @@ export default function Navigation() {
 					</div>
 				</div>
 				<div className="search">
-					<Link href="/profile">
-						<img src="/Icons/Search.svg" alt="search" />
-					</Link>
+					{isSearchPage ? (
+						<button onClick={() => window.history.back()} className="search-button">
+							<img src="/Icons/Cross.svg" alt="close" className="search-icon" />
+						</button>
+					) : (
+						<Link href="/search">
+							<img src="/Icons/Search.svg" alt="search" className="search-icon" />
+						</Link>
+					)}
 				</div>
 				{isAlarmPopupOpen && <AlarmPopup onClose={handleAlarmPopupClose} />}
 			</div>
+
 			<div className="mobile-navbar">
 				<div className="mobile-line"></div>
 				<div className="mobile-bar">
-					<Link href="/where-to-go">
+					<Link href="/what-to-do">
 						<div className={`menu-button ${isActive('/what-to-do') ? 'active' : ''}`}>
 							<img src="/Icons/WhatToDo.svg" alt="img" />
 							<div className="text-subtitle-l">Что делать</div>
