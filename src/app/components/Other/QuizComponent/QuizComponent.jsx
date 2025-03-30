@@ -94,12 +94,11 @@ export default function QuizComponent({ quiz }) {
 				</div>
 				<p className={styles.resultDescription}>{result.description}</p>
 				<div className={styles.resultButtons}>
-					<button onClick={restartQuiz} className={styles.restartButton}>
+					<button onClick={restartQuiz} className={`${styles.restartButton} text-button`}>
 						Перепройти тест
 					</button>
-					{/* Исправляем кнопку "Ко всем тестам" с использованием Link */}
-					<Link href="/quiz" className={styles.allTestsButton}>
-						Ко всем тестам
+					<Link href="/quiz">
+						<div className={`${styles.allTestsButton} text-button`}>Ко всем тестам</div>
 					</Link>
 				</div>
 			</div>
@@ -143,13 +142,13 @@ export default function QuizComponent({ quiz }) {
 
 			<div className={styles.navigationButtons}>
 				{!isFirstQuestion && (
-					<button onClick={handlePrev} className={styles.prevButton}>
+					<button onClick={handlePrev} className={`${styles.prevButton} text-button`}>
 						Назад
 					</button>
 				)}
 				<button
 					onClick={handleNext}
-					className={styles.nextButton}
+					className={`${styles.nextButton} text-button`}
 					disabled={answers[currentQuestionIndex] === undefined}
 				>
 					{isLastQuestion ? 'Узнать результат' : 'Далее'}

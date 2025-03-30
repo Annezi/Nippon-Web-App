@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import './Navbar.css';
+import "./Navbar.css";
 import AlarmPopup from '../../UI/Popups/Alarm/Alarm_Popup';
 
 export default function Navigation() {
