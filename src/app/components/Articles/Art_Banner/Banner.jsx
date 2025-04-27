@@ -3,13 +3,12 @@
 import './Banner.css';
 import Tag from "../../UI/Tags/Tag";
 import Breadcrumbs from "../../UI/Breadcrumbs/Breadcrumbs";
+import { usePathname } from 'next/navigation';
+import { generateBreadcrumbs } from '../../Utils/breadcrumbs';
 
 export default function Banner({ tags, title, description, readTime, publishDate, cover }) {
-	const breadcrumbItems = [
-		{ label: 'Статьи', url: 'Articles' },
-		{ label: 'Культура', url: 'Culture' },
-		{ label: 'Праздники', url: 'Culture/Holidays' }
-	];
+	const pathname = usePathname();
+	const breadcrumbItems = generateBreadcrumbs(pathname);
 
 	return (
 		<div className="banner-container" style={{ backgroundImage: `url(${cover})` }}>

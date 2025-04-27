@@ -8,7 +8,6 @@ import ArticleList from "../../components/Articles/Article_List/ArticleList";
 
 export default async function WTDCategoryClient({ section }) {
   const sec = await section;
-  // console.log('Rendering detail for section:', sec);
 
   if (!section) {
     return (
@@ -21,8 +20,6 @@ export default async function WTDCategoryClient({ section }) {
   }
 
   const data = getDataByContentType(section.contentType);
-  // console.log('Loaded data:', data);
-
   
 
   return (

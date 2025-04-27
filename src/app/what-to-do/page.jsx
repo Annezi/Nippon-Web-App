@@ -13,7 +13,6 @@ import WTDCard from "../components/UI/WTDCard/WTDCard";
 import data from "../database/whatToDoData.json";
 
 const whatToDoSections = data?.sections ? data : { sections: [] };
-// console.log('Loaded sections data:', whatToDoSections.sections);
 
 export default function WhatToDoPage() {
 	return (

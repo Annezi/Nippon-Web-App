@@ -3,7 +3,7 @@
 		{
 			"id": 73,
 			"cover": "/place/1/cover-1.png",
-			"url": "/what-to-do/place/73",
+			"url": "/what-to-do/places/73",
 			"tags": [
 				"москва",
 				"выставка"
@@ -40,9 +40,9 @@
 		{
 			"id": 74,
 			"cover": "/place/2/cover-2.png",
-			"url": "/what-to-do/place/74",
+			"url": "/what-to-do/places/74",
 			"tags": [
-				"санкт-петербург",
+				"спб",
 				"место"
 			],
 			"title": "Сад дружбы",
@@ -77,7 +77,7 @@
 		{
 			"id": 75,
 			"cover": "/place/3/cover-3.png",
-			"url": "/what-to-do/place/75",
+			"url": "/what-to-do/places/75",
 			"tags": [
 				"владивосток",
 				"место"
@@ -114,7 +114,7 @@
 		{
 			"id": 76,
 			"cover": "/place/4/cover-4.png",
-			"url": "/what-to-do/place/76",
+			"url": "/what-to-do/places/76",
 			"tags": [
 				"челябинск",
 				"место"
@@ -147,7 +147,7 @@
 		{
 			"id": 77,
 			"cover": "/place/5/cover-5.png",
-			"url": "/what-to-do/place/77",
+			"url": "/what-to-do/places/77",
 			"tags": [
 				"еда",
 				"рекомендации"
@@ -180,7 +180,7 @@
 		{
 			"id": 78,
 			"cover": "/place/6/cover-6.png",
-			"url": "/what-to-do/place/78",
+			"url": "/what-to-do/places/78",
 			"tags": [
 				"москва",
 				"культура"
@@ -213,7 +213,7 @@
 		{
 			"id": 79,
 			"cover": "/place/7/cover-7.png",
-			"url": "/what-to-do/place/79",
+			"url": "/what-to-do/places/79",
 			"tags": [
 				"япония",
 				"аниме"
@@ -246,7 +246,7 @@
 		{
 			"id": 80,
 			"cover": "/place/8/cover-8.png",
-			"url": "/what-to-do/place/80",
+			"url": "/what-to-do/places/80",
 			"tags": [
 				"европа",
 				"музей"
@@ -279,7 +279,7 @@
 		{
 			"id": 81,
 			"cover": "/place/9/cover-9.png",
-			"url": "/what-to-do/place/81",
+			"url": "/what-to-do/places/81",
 			"tags": [
 				"россия",
 				"культура"
@@ -312,7 +312,7 @@
 		{
 			"id": 82,
 			"cover": "/place/10/cover-10.png",
-			"url": "/what-to-do/place/82",
+			"url": "/what-to-do/places/82",
 			"tags": [
 				"россия",
 				"рекомендации"
@@ -345,7 +345,7 @@
 		{
 			"id": 83,
 			"cover": "/place/11/cover-11.png",
-			"url": "/what-to-do/place/83",
+			"url": "/what-to-do/places/83",
 			"tags": [
 				"япония",
 				"рекомендации"
@@ -378,7 +378,7 @@
 		{
 			"id": 84,
 			"cover": "/place/12/cover-12.png",
-			"url": "/what-to-do/place/84",
+			"url": "/what-to-do/places/84",
 			"tags": [
 				"япония",
 				"культура"
@@ -411,7 +411,7 @@
 		{
 			"id": 85,
 			"cover": "/place/13/cover-13.png",
-			"url": "/what-to-do/place/85",
+			"url": "/what-to-do/places/85",
 			"tags": [
 				"япония",
 				"еда"
@@ -444,7 +444,7 @@
 		{
 			"id": 86,
 			"cover": "/place/14/cover-14.png",
-			"url": "/what-to-do/place/86",
+			"url": "/what-to-do/places/86",
 			"tags": [
 				"россия",
 				"еда"

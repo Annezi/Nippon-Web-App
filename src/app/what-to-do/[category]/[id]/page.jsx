@@ -1,15 +1,7 @@
-
 import WTDPageDetailClient from "./WTDPageClient";
-import WTDPageData from "../../../database/whatToDoData.json";
 import mangaData from "../../../database/mangaData.json";
 import animeData from "../../../database/animeData.json";
 import placeData from "../../../database/placeData.json";
-
-// async function getWTDPageById(id) {
-// 	const WTDPageId = parseInt(id);
-// 	const WTDPageItem = WTDPageData.WTDPage.find(item => item.id === WTDPageId);
-// 	return WTDPageItem || null;
-// }
 
 
 async function getDataFromDatabase(id, category) {
@@ -20,7 +12,7 @@ async function getDataFromDatabase(id, category) {
 	} else if (category === "anime") {
 		const animeItem = animeData.anime.find(item => item.id === findid);
 		return animeItem || null;
-	} else if (category === "place") {
+	} else if (category === "places") {
 		const placeItem = placeData.places.find(item => item.id === findid);
 		return placeItem || null;
 	} else {
