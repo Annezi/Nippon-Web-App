@@ -31,7 +31,6 @@ export async function generateMetadata({ params }) {
 export default async function WTDPageDetail({ params }) {
 	const { category } = await params;
 	const categoryItem = await getDataFromDatabase(category);
-	console.log(categoryItem);
 	if (!categoryItem) return <div>Категория не найдена</div>;
 
 	return <WTDCategoryClient section={categoryItem} />;

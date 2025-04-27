@@ -4,7 +4,7 @@ import mangaData from '../../database/mangaData.json';
 
 export const getDataByContentType = (contentType) => {
 	try {
-		console.log(`Getting data for ${contentType}`);
+		// console.log(`Getting data for ${contentType}`);
 
 		switch (contentType) {
 			case 'places':

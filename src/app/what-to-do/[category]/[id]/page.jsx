@@ -15,7 +15,6 @@ import placeData from "../../../database/placeData.json";
 async function getDataFromDatabase(id, category) {
 	const findid = parseInt(id);
 	if (category === "manga") {
-		console.log(mangaData.manga);
 		const mangaItem = mangaData.manga.find(item => item.id === findid);
 		return mangaItem || null;
 	} else if (category === "anime") {
@@ -32,8 +31,8 @@ async function getDataFromDatabase(id, category) {
 export async function generateMetadata({ params }) {
 	const { category, id } = await params;
 	const WTDPage = await getDataFromDatabase(id, category);
-	console.log(WTDPage);
-	console.log("Metadata WTDPage:", WTDPage);
+	// console.log(WTDPage);
+	// console.log("Metadata WTDPage:", WTDPage);
 	return {
 		title: WTDPage?.title || "Новость не найдена",
 		description: WTDPage?.description || "",

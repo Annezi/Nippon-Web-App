@@ -19,7 +19,6 @@ export default function ArticleList({
 }) {
 	const [isMobile, setIsMobile] = useState(false);
 	const [visibleCount, setVisibleCount] = useState(limit);
-	console.log(articles);
 
 	useEffect(() => {
 		setIsMobile(typeof window !== "undefined" && window.innerWidth <= 710);
@@ -95,7 +94,6 @@ export default function ArticleList({
 					// Для мобильных все карточки mini, кроме явно указанных custom
 					const finalVariant = isMobile && !isCustom ? "mini" : variant;
 					const gridClass = `article-card-${finalVariant}`;
-					// console.log("hr: ",hr)
 					return (
 						<Link
 							key={article.id}

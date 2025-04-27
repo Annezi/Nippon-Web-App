@@ -1,4 +1,4 @@
-/* Основные стили для карточки */
+/* Общие стили для карточки */
 .article-card {
 	display: flex;
 	flex-direction: column;
@@ -21,17 +21,6 @@
 	background-color: #fff;
 }
 
-.article-card-mini.article-card-with-tags {
-	height: 481px;
-}
-
-.article-card-mini .article-cover img {
-	width: 284px;
-	height: 284px;
-	object-fit: cover;
-	border-radius: 8px;
-}
-
 /* Стили для большой карточки */
 .article-card-large {
 	width: 670px;
@@ -39,36 +28,31 @@
 	background-color: #fff;
 }
 
-.article-card-large.article-card-with-tags {
-	height: 524px;
-}
-
-.article-card-large .article-cover img {
-	width: 630px;
-	height: 284px;
-	object-fit: cover;
-	border-radius: 8px;
-}
-
 /* Стили для кастомной карточки */
 .article-card-custom {
 	background-color: transparent;
 	padding: 0;
 	width: 100%;
-	max-width: 100%; 
-}
-
-.article-card-custom .article-cover img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
-	border-radius: 8px;
 }
 
+/* Контейнер для изображения */
+.article-cover-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 221px;
+	border-radius: 5px;
+}
+
+/* Стили для тегов */
 .article-tags {
 	display: flex;
 	gap: 8px;
 }
 
+/* Стили для заголовка */
 .article-title {
 	display: flex;
 	align-content: center;
@@ -80,6 +64,7 @@
 	-webkit-box-orient: vertical;
 }
 
+/* Стили для описания */
 .article-description {
 	display: flex;
 	align-content: center;
@@ -91,6 +76,7 @@
 	-webkit-box-orient: vertical;
 }
 
+/* Тень */
 .shadow {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

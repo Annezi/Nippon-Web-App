@@ -50,14 +50,24 @@
 	cursor: not-allowed;
 }
 
+.contentArea {
+	width: 100%;
+	min-height: 60vh;
+	/* Фиксированная минимальная высота */
+	display: flex;
+	flex-direction: column;
+}
+
 .defaultContent {
 	margin-top: 30px;
+	width: 100%;
 }
 
 .loading {
 	display: flex;
 	justify-content: center;
 	padding: 40px 0;
+	width: 100%;
 }
 
 .spinner {
@@ -69,15 +79,27 @@
 	animation: spin 1s ease-in-out infinite;
 }
 
-@keyframes spin {
-	to {
-		transform: rotate(360deg);
-	}
+.skeletonContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	max-width: 1360px;
+	margin: 20px auto 0;
+}
+
+.skeletonItem {
+	height: 120px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite;
+	border-radius: 8px;
 }
 
 .noResults {
 	text-align: center;
 	padding: 50px 0;
+	width: 100%;
 }
 
 .noResults img {
@@ -95,12 +117,31 @@
 	flex-direction: column;
 	animation: fadeIn 0.5s ease;
 	align-items: center;
+	width: 100%;
 }
 
 .resultsTitle {
 	font-size: 1.5rem;
 	margin-bottom: 20px;
 	color: #333;
+	text-align: center;
+	width: 100%;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+
+	100% {
+		background-position: -200% 0;
+	}
 }
 
 @keyframes fadeIn {
