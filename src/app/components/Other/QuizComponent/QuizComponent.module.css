@@ -1,6 +1,7 @@
 .quizContainer {
 	max-width: 600px;
 	min-width: 325px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 40px;
 	background: white;

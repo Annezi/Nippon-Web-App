@@ -5,10 +5,6 @@ import { usePathname } from 'next/navigation';
 import "./Navbar.css";
 import AlarmPopup from '../../UI/Popups/Alarm/Alarm_Popup';
 
-
-const SearchIcon = '/Icons/Search.svg';
-const CloseIcon = '/Icons/Cross.svg';
-
 export default function Navigation() {
 	const [isAlarmPopupOpen, setIsAlarmPopupOpen] = useState(false);
 	const [isInitialRender, setIsInitialRender] = useState(true);
@@ -113,7 +109,7 @@ export default function Navigation() {
 				{isAlarmPopupOpen && <AlarmPopup onClose={handleAlarmPopupClose} />}
 			</div>
 
-			<div className="mobile-navbar">
+			<div className="mobile-navbar shadow">
 				<div className="mobile-line"></div>
 				<div className="mobile-bar">
 					<Link href="/what-to-do">

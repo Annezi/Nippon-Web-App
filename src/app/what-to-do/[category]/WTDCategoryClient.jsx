@@ -7,7 +7,6 @@ import Footer from "../../components/Navigation/Footer/Footer";
 import ArticleList from "../../components/Articles/Article_List/ArticleList";
 
 export default async function WTDCategoryClient({ section }) {
-  const sec = await section;
 
   if (!section) {
     return (

@@ -95,26 +95,32 @@
 	}
 }
 
-@media screen and (max-width : 1100px) {
+@media screen and (max-width : 1024px) {
 	.darken-bg {
 		width: 96%;
 	}
 }
 
-@media screen and (max-width : 900px) {
+@media screen and (max-width : 768px) {
 	.darken-bg {
-		width: 95%;
+		width: 94.5%;
 	}
 }
 
-@media screen and (max-width : 700px) {
+@media screen and (max-width : 426px) {
 	.darken-bg {
-		width: 94%;
+		width: 90%;
 	}
 }
 
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 376px) {
 	.darken-bg {
-		width: 92%;
+		width: 88.5%;
+	}
+}
+
+@media screen and (max-width : 320px) {
+	.darken-bg {
+		width: 86%;
 	}
 }
