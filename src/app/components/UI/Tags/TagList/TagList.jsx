@@ -3,27 +3,34 @@ import Tag from '../Tag/Tag';
 import Button from '../../Button/Button';
 import "./TagList.css";
 
-export default function TagList({ articles, size = 'medium', theme = 'white', isActive = true }) {
+export default function TagList({
+	articles,
+	size = 'medium',
+	theme = 'white',
+	isActive = true,
+	onTagFilterChange
+}) {
 	const allTags = articles.flatMap(article => article.tags || []);
 	const uniqueTags = [...new Set(allTags)];
 
-	// Состояние для хранения активных тегов
 	const [activeTags, setActiveTags] = useState({});
 
-	// Обработчик клика по тегу
 	const handleTagClick = (tag) => {
-		setActiveTags(prev => ({
-			...prev,
-			[tag]: !prev[tag]
-		}));
+		const newActiveTags = {
+			...activeTags,
+			[tag]: !activeTags[tag]
+		};
+		setActiveTags(newActiveTags);
+		// Передаем массив активных тегов в родительский компонент
+		const selectedTags = Object.keys(newActiveTags).filter(tag => newActiveTags[tag]);
+		onTagFilterChange(selectedTags);
 	};
 
-	// Сброс всех активных тегов
 	const resetFilters = () => {
 		setActiveTags({});
+		onTagFilterChange([]); // Сбрасываем фильтрацию по тегам
 	};
 
-	// Проверяем, есть ли активные теги
 	const hasActiveTags = Object.values(activeTags).some(Boolean);
 
 	return (

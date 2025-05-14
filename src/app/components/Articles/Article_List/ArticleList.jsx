@@ -21,6 +21,7 @@ export default function ArticleList({
 }) {
 	const [isMobile, setIsMobile] = useState(false);
 	const [visibleCount, setVisibleCount] = useState(limit);
+	const [activeTags, setActiveTags] = useState([]);
 
 	useEffect(() => {
 		setIsMobile(typeof window !== "undefined" && window.innerWidth <= 710);
@@ -46,6 +47,13 @@ export default function ArticleList({
 		);
 	}
 
+	// Дополнительная фильтрация по тегам
+	if (activeTags.length > 0) {
+		filteredArticles = filteredArticles.filter(article =>
+			article.tags && activeTags.some(tag => article.tags.includes(tag))
+		);
+	}
+
 	// Определяем варианты рендера карточек
 	const getCardVariants = () => {
 		if (renderStyle === "manual") {
@@ -55,24 +63,27 @@ export default function ArticleList({
 					article,
 					variant: manualItem?.variant || "mini",
 					isCustom: manualItem?.variant === "custom",
-					basePath: manualItem?.basePath || `/${contentType}/` // Добавляем basePath
+					basePath: manualItem?.basePath || `/${contentType}/`
 				};
 			});
 		}
 
-		// Стиль 'catalog' - каждая 7-я карточка большая
 		return filteredArticles.slice(0, visibleCount).map((article, index) => ({
 			article,
 			variant: (index + 1) % 7 === 0 ? "large" : "mini",
 			isCustom: false,
-			basePath: `/${contentType}/` // Базовый путь для catalog режима
+			basePath: `/${contentType}/`
 		}));
+	};
+
+	const handleTagFilterChange = (selectedTags) => {
+		setActiveTags(selectedTags);
+		setVisibleCount(limit); // Сброс видимого количества при изменении фильтрации
 	};
 
 	const cardVariants = getCardVariants();
 	const isSingleCard = cardVariants.length === 1;
 	const hasMoreArticles = showLoadMore && filteredArticles.length > visibleCount;
-
 
 	const handleLoadMore = () => {
 		const newCount = visibleCount + limit;
@@ -84,10 +95,11 @@ export default function ArticleList({
 		<div className="article-list">
 			{tagFilter && (
 				<TagList
-					articles={filteredArticles}
+					articles={articles} // Передаем исходный массив статей, а не отфильтрованный
 					size="medium"
 					theme="red"
 					isActive={true}
+					onTagFilterChange={handleTagFilterChange}
 				/>
 			)}
 
@@ -95,16 +107,17 @@ export default function ArticleList({
 				{cardVariants.map(({ article, variant, isCustom, basePath }) => {
 					var hr = "";
 					if (url != null) {
-						hr = `${url}`
+						hr = `${url}`;
 					} else {
-						hr = `${basePath}${article.id}`
+						hr = `${basePath}${article.id}`;
 					}
 					if (article.url) {
-						hr = article.url
+						hr = article.url;
 					}
-					// Для мобильных все карточки mini, кроме явно указанных custom
+
 					const finalVariant = isMobile && !isCustom ? "mini" : variant;
 					const gridClass = `article-card-${finalVariant}`;
+
 					return (
 						<Link
 							key={article.id}

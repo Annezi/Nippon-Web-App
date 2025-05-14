@@ -22,6 +22,7 @@ export default function QuizPage() {
 			<ArticleList
 				articles={quiz.quiz}
 				renderStyle="manual"
+				tagFilter={true}
 				manualConfig={
 					quiz.quiz.map(item => ({
 						id: item.id,

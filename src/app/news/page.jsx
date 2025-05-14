@@ -23,6 +23,7 @@ export default function NewsPage() {
 				articles={news.news}
 				renderStyle="catalog"
 				contentType="news"
+				tagFilter={true}
 			/>
 
 			<MonthBest />

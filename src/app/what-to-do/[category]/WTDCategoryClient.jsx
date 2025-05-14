@@ -8,43 +8,44 @@ import ArticleList from "../../components/Articles/Article_List/ArticleList";
 
 export default async function WTDCategoryClient({ section }) {
 
-  if (!section) {
-    return (
-      <div className="LandingBox">
-        <Navbar />
-        <div>Раздел не найден</div>
-        <Footer />
-      </div>
-    );
-  }
+	if (!section) {
+		return (
+			<div className="LandingBox">
+				<Navbar />
+				<div>Раздел не найден</div>
+				<Footer />
+			</div>
+		);
+	}
 
-  const data = getDataByContentType(section.contentType);
-  
+	const data = getDataByContentType(section.contentType);
 
-  return (
-    <div className="LandingBox">
-      <Navbar />
-      <TopSections
-        displayMode="solo"
-        soloImage={section.cover}
-        soloText={section.description}
-        button_text="Вернуться назад"
-        onButtonClick={() => {window.location.href = '/what-to-do'}}
-      />
 
-      {data && data.length > 0 ? (
-        <ArticleList
-          articles={data}
-          renderStyle="catalog"
-          contentType={section.contentType}
-        />
-      ) : (
-        <div className="no-data-message">
-          Нет данных для отображения
-        </div>
-      )}
+	return (
+		<div className="LandingBox">
+			<Navbar />
+			<TopSections
+				displayMode="solo"
+				soloImage={section.cover}
+				soloText={section.description}
+				button_text="Вернуться назад"
+				onButtonClick={() => { window.location.href = '/what-to-do' }}
+			/>
 
-      <Footer />
-    </div>
-  );
+			{data && data.length > 0 ? (
+				<ArticleList
+					articles={data}
+					renderStyle="catalog"
+					tagFilter={true}
+					contentType={section.contentType}
+				/>
+			) : (
+				<div className="no-data-message">
+					Нет данных для отображения
+				</div>
+			)}
+
+			<Footer />
+		</div>
+	);
 }
