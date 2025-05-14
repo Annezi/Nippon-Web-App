@@ -1,6 +1,6 @@
 "use client";
 import "./ArticleCard.css";
-import Tag from "../../UI/Tags/Tag";
+import Tag from "../../UI/Tags/Tag/Tag";
 import Image from "next/image";
 
 export default function ArticleCard({
@@ -43,7 +43,7 @@ export default function ArticleCard({
 			{hasTags && (
 				<div className="article-tags">
 					{tags.slice(0, 2).map((tag, index) => (
-						<Tag key={index} text={tag} size="small" theme="red" />
+						<Tag key={index} text={tag} size="small" theme="red"  isActive={false} />
 					))}
 				</div>
 			)}

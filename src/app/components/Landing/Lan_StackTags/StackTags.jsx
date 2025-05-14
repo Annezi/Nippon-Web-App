@@ -1,5 +1,5 @@
 import './StackTags.css';
-import Tag from "../../UI/Tags/Tag"
+import Tag from "../../UI/Tags/Tag/Tag"
 
 export default function StackTags() {
 	return(

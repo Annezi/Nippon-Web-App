@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import ArticleCard from "../Article_Card/ArticleCard";
+import TagList from "../../UI/Tags/TagList/TagList";
 import "./ArticleList.css";
 
 export default function ArticleList({
@@ -15,7 +16,8 @@ export default function ArticleList({
 	showLoadMore = false,
 	onLoadMore = () => { },
 	contentType = "articles",
-	url = null 
+	url = null,
+	tagFilter = false
 }) {
 	const [isMobile, setIsMobile] = useState(false);
 	const [visibleCount, setVisibleCount] = useState(limit);
@@ -80,6 +82,15 @@ export default function ArticleList({
 
 	return (
 		<div className="article-list">
+			{tagFilter && (
+				<TagList
+					articles={filteredArticles}
+					size="medium"
+					theme="red"
+					isActive={true}
+				/>
+			)}
+
 			<div className={`article-list-wrapper ${isSingleCard ? "no-grid" : ""}`}>
 				{cardVariants.map(({ article, variant, isCustom, basePath }) => {
 					var hr = "";

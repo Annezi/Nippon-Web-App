@@ -1,4 +1,8 @@
-/* Основной контейнер для списка статей */
+.article-list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
 
 /* Контейнер с гридом */
 .article-list-wrapper {

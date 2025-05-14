@@ -5,6 +5,26 @@
 	border: 2px solid;
 	border-radius: 5px;
 	transition: background-color 0.3s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+/* неактивное состояние */
+.tag-inactive {
+	cursor: default;
+	pointer-events: none;
+}
+
+/* кликнутое состояние */
+.tag-clicked {
+	background-color: var(--red-color) !important;
+	color: var(--white-color) !important;
+}
+
+.tag-cross {
+	margin-left: 8px;
+	font-size: 1.2em;
+	line-height: 0;
 }
 
 /* размеры кнопок */
@@ -15,7 +35,7 @@
 }
 
 .tag-medium {
-	height: 40px;
+	height: 44px;
 	margin-right: 8px;
 }
 
@@ -30,16 +50,12 @@
 	color: var(--white-color);
 }
 
-.tag-white:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-}
-
 .tag-red {
 	border-color: var(--red-color);
 	color: var(--red-color);
 }
 
-.tag-red:hover {
+.tag-red:hover:not(.tag-inactive) {
 	background-color: var(--red-color);
 	color: var(--white-color);
 }

@@ -26,6 +26,7 @@ export default function ArticlesPage() {
 			<ArticleList
 				articles={articles.articles}
 				renderStyle="catalog"
+				tagFilter={true}
 			/>
 
 			<MonthBest/>

@@ -2,7 +2,7 @@ import "./TestBannerContent.css"
 import React, { useState } from "react";
 import Question from "./Question";
 import Result from "./Result";
-import Tag from "../../UI/Tags/Tag";
+import Tag from "../../UI/Tags/Tag/Tag";
 import Button from "../../UI/Button/Button";
 
 const questions = [

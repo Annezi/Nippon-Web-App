@@ -1,7 +1,7 @@
 "use client";
 
 import './Banner.css';
-import Tag from "../../UI/Tags/Tag";
+import Tag from "../../UI/Tags/Tag/Tag";
 import Breadcrumbs from "../../UI/Breadcrumbs/Breadcrumbs";
 import { usePathname } from 'next/navigation';
 import { generateBreadcrumbs } from '../../Utils/breadcrumbs';
@@ -25,7 +25,7 @@ export default function Banner({ tags, title, description, readTime, publishDate
 				<div className="infoMain-ArticleInfo">
 					<div className="ArticleInfo-tags">
 						{tags.map((tag, index) => (
-							<Tag key={index} text={tag} size='small' theme='white' />
+							<Tag key={index} text={tag} size='small' theme='white' isActive={false}/>
 						))}
 					</div>
 					<div className="ArticleInfo-title text-title-l">{title}</div>

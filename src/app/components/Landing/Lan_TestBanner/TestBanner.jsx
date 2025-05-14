@@ -3,7 +3,7 @@
 import { useState } from "react";
 import './TestBanner.css';
 import Test from '../../Other/TestSection/TestBannerContent';
-import Tag from "../../UI/Tags/Tag";
+import Tag from "../../UI/Tags/Tag/Tag";
 import Button from "../../UI/Button/Button";
 
 export default function TestBanner() {

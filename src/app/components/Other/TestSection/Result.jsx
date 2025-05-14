@@ -1,4 +1,4 @@
-import Tag from "../../UI/Tags/Tag";
+import Tag from "../../UI/Tags/Tag/Tag";
 import Button from "../../UI/Button/Button";
 import "./Result.css"
 
