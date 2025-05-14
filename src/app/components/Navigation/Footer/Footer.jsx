@@ -1,12 +1,7 @@
 import "./Footer.css"
+import Link from 'next/link';
 
 export default function Footer() {
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth',
-		});
-	};
 
 	return (
 		<div className="footer-container">
@@ -14,8 +9,22 @@ export default function Footer() {
 				<div className="footer-content-img">
 					<img src="/logo_short-menu.svg" alt="-" />
 				</div>
-				<div className="toTop" onClick={scrollToTop}>
-					<img src="/Icons/Arrow.svg" alt="To Top" />
+				<div className="footer-content-links">
+					<div className="text-subtitle-2" >
+						<Link href="/what-to-do">Что делать</Link>
+					</div>
+					<div className="text-subtitle-2" >						
+						<Link href="/quiz">Тесты</Link>
+					</div>
+					<div className="text-subtitle-2" >
+						<Link href="/articles">Статьи</Link>
+					</div>
+					<div className="text-subtitle-2" >						
+						<Link href="/news">Новости</Link>
+					</div>
+					<div className="text-subtitle-2" >
+						<Link href="/about">О нас</Link>
+					</div>
 				</div>
 			</div>
 		</div>
