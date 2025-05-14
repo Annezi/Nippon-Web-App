@@ -1,9 +1,9 @@
 {
 	"manga": [
 		{
-			"id": 59,
+			"id": "manga-pro-samuraev",
 			"cover": "/manga/1/cover-1.png",
-			"url": "/what-to-do/manga/59",
+			"url": "/what-to-do/manga/manga-pro-samuraev",
 			"tags": [
 				"сёнен",
 				"классика",
@@ -29,9 +29,9 @@
 			]
 		},
 		{
-			"id": 60,
+			"id": "manga-dlya-novichkov",
 			"cover": "/manga/2/cover-2.png",
-			"url": "/what-to-do/manga/60",
+			"url": "/what-to-do/manga/manga-dlya-novichkov",
 			"tags": [
 				"подборки",
 				"рекомендации"
@@ -56,9 +56,9 @@
 			]
 		},
 		{
-			"id": 61,
+			"id": "romanticheskaya-manga",
 			"cover": "/manga/3/cover-3.png",
-			"url": "/what-to-do/manga/61",
+			"url": "/what-to-do/manga/romanticheskaya-manga",
 			"tags": [
 				"сёдзё",
 				"романтика"
@@ -83,9 +83,9 @@
 			]
 		},
 		{
-			"id": 62,
+			"id": "vdohnovlyayushchaya-manga",
 			"cover": "/manga/4/cover-4.png",
-			"url": "/what-to-do/manga/62",
+			"url": "/what-to-do/manga/vdohnovlyayushchaya-manga",
 			"tags": [
 				"сёнен",
 				"интересное"
@@ -110,9 +110,9 @@
 			]
 		},
 		{
-			"id": 63,
+			"id": "manga-dlya-fanatov-anime",
 			"cover": "/manga/5/cover-5.png",
-			"url": "/what-to-do/manga/63",
+			"url": "/what-to-do/manga/manga-dlya-fanatov-anime",
 			"tags": [
 				"рекомендации",
 				"обсуждения"
@@ -137,9 +137,9 @@
 			]
 		},
 		{
-			"id": 64,
+			"id": "manga-magiya-i-priklyucheniya",
 			"cover": "/manga/6/cover-6.png",
-			"url": "/what-to-do/manga/64",
+			"url": "/what-to-do/manga/manga-magiya-i-priklyucheniya",
 			"tags": [
 				"фэнтези",
 				"приключения"
@@ -164,9 +164,9 @@
 			]
 		},
 		{
-			"id": 65,
+			"id": "manga-pered-smertyu",
 			"cover": "/manga/7/cover-7.png",
-			"url": "/what-to-do/manga/65",
+			"url": "/what-to-do/manga/manga-pered-smertyu",
 			"tags": [
 				"классика",
 				"подборки"
@@ -191,9 +191,9 @@
 			]
 		},
 		{
-			"id": 66,
+			"id": "silnye-zhenskie-obrazy-v-mange",
 			"cover": "/manga/8/cover-8.png",
-			"url": "/what-to-do/manga/66",
+			"url": "/what-to-do/manga/silnye-zhenskie-obrazy-v-mange",
 			"tags": [
 				"сёдзё",
 				"интересное"
@@ -218,9 +218,9 @@
 			]
 		},
 		{
-			"id": 67,
+			"id": "korotkaya-manga",
 			"cover": "/manga/9/cover-9.png",
-			"url": "/what-to-do/manga/67",
+			"url": "/what-to-do/manga/korotkaya-manga",
 			"tags": [
 				"короткие",
 				"рекомендации"
@@ -245,9 +245,9 @@
 			]
 		},
 		{
-			"id": 68,
+			"id": "detektivnaya-manga",
 			"cover": "/manga/10/cover-10.png",
-			"url": "/what-to-do/manga/68",
+			"url": "/what-to-do/manga/detektivnaya-manga",
 			"tags": [
 				"сейнен",
 				"детективы"
@@ -272,9 +272,9 @@
 			]
 		},
 		{
-			"id": 69,
+			"id": "manga-pro-shkolu",
 			"cover": "/manga/11/cover-11.png",
-			"url": "/what-to-do/manga/69",
+			"url": "/what-to-do/manga/manga-pro-shkolu",
 			"tags": [
 				"сёдзё",
 				"школа"
@@ -299,9 +299,9 @@
 			]
 		},
 		{
-			"id": 70,
+			"id": "dramaticheskaya-manga",
 			"cover": "/manga/12/cover-12.png",
-			"url": "/what-to-do/manga/70",
+			"url": "/what-to-do/manga/dramaticheskaya-manga",
 			"tags": [
 				"драма",
 				"рекомендации"
@@ -326,9 +326,9 @@
 			]
 		},
 		{
-			"id": 71,
+			"id": "manga-pro-edu",
 			"cover": "/manga/13/cover-13.png",
-			"url": "/what-to-do/manga/71",
+			"url": "/what-to-do/manga/manga-pro-edu",
 			"tags": [
 				"еда",
 				"интересное"
@@ -353,9 +353,9 @@
 			]
 		},
 		{
-			"id": 72,
+			"id": "kak-sozdaetsya-manga",
 			"cover": "/manga/14/cover-14.png",
-			"url": "/what-to-do/manga/72",
+			"url": "/what-to-do/manga/kak-sozdaetsya-manga",
 			"tags": [
 				"интересное",
 				"находки"

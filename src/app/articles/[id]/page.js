@@ -3,16 +3,14 @@ import articlesData from "../../database/articlesData.json";
 import articlesSection from "../../database/sectionData.json";
 
 async function getArticleById(id) {
-	const articleId = parseInt(id);
-
 	if (!Array.isArray(articlesData.articles)) {
 		console.error("articlesData.articles is not an array:", articlesData.articles);
 		return null;
 	}
 
-	const article = articlesData.articles.find((article) => article.id === articleId);
+	const article = articlesData.articles.find((article) => article.id === id);
 	if (article) {
-		const section = articlesSection.data.find((section) => section.id === article.sectionId);
+		const section = articlesSection.data.find((section) => section.id.toString() === article.sectionId?.toString());
 		return { ...article, section };
 	}
 
@@ -20,8 +18,7 @@ async function getArticleById(id) {
 }
 
 export async function generateMetadata({ params }) {
-	const id = parseInt(params.id);
-	const article = await getArticleById(id);
+	const article = await getArticleById(params.id);
 
 	if (!article) {
 		return {
@@ -50,8 +47,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ArticleDetail({ params }) {
-	const id = parseInt(params.id);
-	const article = await getArticleById(id);
+	const article = await getArticleById(params.id);
 
 	if (!article) {
 		return <div>Статья не найдена</div>;

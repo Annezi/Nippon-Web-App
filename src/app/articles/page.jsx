@@ -14,11 +14,11 @@ export default function ArticlesPage() {
 			<TopSections sections={[
 				{
 					title: "ПОСМЕЯТЬСЯ",
-					articleId: 87
+					articleId: "yaponskie-memy"
 				},
 				{
 					title: "ПОУМНИЧАТЬ",
-					articleId: 88
+					articleId: "yaponskij-yazyk"
 				}
 			]} />
 

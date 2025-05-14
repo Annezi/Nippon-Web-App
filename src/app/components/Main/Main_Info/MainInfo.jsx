@@ -23,8 +23,7 @@ export default function Info() {
 					<ArticleList
 						articles={articles.articles}
 						renderStyle="manual"
-						manualConfig={[{ id: 91, variant: "custom" }]}
-						filteredIds={[5]}
+						manualConfig={[{ id: "populyarnye-yaponskie-blyuda", variant: "custom" }]}
 					/>
 				</div>
 				<div className="lan-right-card">

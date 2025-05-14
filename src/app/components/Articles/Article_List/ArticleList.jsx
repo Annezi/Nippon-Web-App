@@ -35,15 +35,16 @@ export default function ArticleList({
 
 	// Если есть manualConfig в manual режиме - фильтруем по нему
 	if (renderStyle === "manual" && manualConfig.length > 0) {
-		const manualIds = manualConfig.map(item => item.id);
+		const manualIds = manualConfig.map(item => item.id.toString()); // Приводим к строке
 		filteredArticles = filteredArticles.filter(article =>
-			manualIds.includes(article.id)
+			manualIds.includes(article.id.toString()) // Приводим к строке
 		);
 	}
+
 	// Иначе фильтруем по filteredIds, если они переданы
 	else if (filteredIds.length > 0) {
 		filteredArticles = filteredArticles.filter(article =>
-			filteredIds.includes(article.id)
+			filteredIds.map(id => id.toString()).includes(article.id.toString())
 		);
 	}
 

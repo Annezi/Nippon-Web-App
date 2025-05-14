@@ -2,8 +2,7 @@ import NewsDetailClient from "./NewsDetailClient";
 import newsData from "../../database/newsData.json";
 
 async function getNewsById(id) {
-	const newsId = parseInt(id);
-	const newsItem = newsData.news.find(item => item.id === newsId);
+	const newsItem = newsData.news.find(item => item.id === id);	
 	return newsItem || null;
 }
 

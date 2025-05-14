@@ -1,8 +1,8 @@
 {
 	"quiz": [
 		{
-			"id": 35,
-			"url": "/quiz/35",
+			"id": "test-kakoe-anime-vam-podoydet",
+			"url": "/quiz/test-kakoe-anime-vam-podoydet",
 			"title": "Какое аниме вам подойдёт?",
 			"description": "Узнайте, какой аниме-сериал станет вашим новым фаворитом",
 			"cover": "/Quiz/1/cover-1.png",
@@ -189,8 +189,8 @@
 			]
 		},
 		{
-			"id": 36,
-			"url": "/quiz/36",
+			"id": "test-kakoy-yaponskiy-duh",
+			"url": "/quiz/test-kakoy-yaponskiy-duh",
 			"title": "Какой вы японский дух?",
 			"description": "Узнайте, кто вы: мудрый кицунэ или загадочный каппа",
 			"cover": "/Quiz/2/cover-2.png",
@@ -367,8 +367,8 @@
 			]
 		},
 		{
-			"id": 37,
-			"url": "/quiz/37",
+			"id": "test-kakoe-yaponskoe-blyudo-vy",
+			"url": "/quiz/test-kakoe-yaponskoe-blyudo-vy",
 			"title": "Какое японское блюдо вы?",
 			"description": "Суши, рамен или такояки? Узнайте, какое блюдо вас характеризует",
 			"cover": "/Quiz/3/cover-3.png",
@@ -544,8 +544,8 @@
 			]
 		},
 		{
-			"id": 38,
-			"url": "/quiz/38",
+			"id": "test-kakoy-gorod-yaponii-vam-podhodit",
+			"url": "/quiz/test-kakoy-gorod-yaponii-vam-podhodit",
 			"title": "Какой город Японии вам подходит?",
 			"description": "Токио, Киото или Осака? Узнайте свой идеальный японский город",
 			"cover": "/Quiz/4/cover-4.png",
@@ -721,8 +721,8 @@
 			]
 		},
 		{
-			"id": 39,
-			"url": "/quiz/39",
+			"id": "test-kakaya-manga-vam-ponravitsya",
+			"url": "/quiz/test-kakaya-manga-vam-ponravitsya",
 			"title": "Какая манга вам понравится?",
 			"description": "Подборка манги под ваш вкус: от романтики до экшена",
 			"cover": "/Quiz/5/cover-5.png",
@@ -901,8 +901,8 @@
 			]
 		},
 		{
-			"id": 40,
-			"url": "/quiz/40",
+			"id": "test-kto-vy-iz-yaponskoy-mifologii",
+			"url": "/quiz/test-kto-vy-iz-yaponskoy-mifologii",
 			"title": "Кто вы из японской мифологии?",
 			"description": "Узнайте, каким мифическим существом вы бы стали",
 			"cover": "/Quiz/6/cover-6.png",
@@ -1078,8 +1078,8 @@
 			]
 		},
 		{
-			"id": 41,
-			"url": "/quiz/41",
+			"id": "test-kakoy-vy-yaponskiy-gorod",
+			"url": "/quiz/test-kakoy-vy-yaponskiy-gorod",
 			"title": "Какой вы японский город?",
 			"description": "Токио, Киото или Осака? Узнайте, какой город вам подходит",
 			"cover": "/Quiz/7/cover-7.png",
@@ -1255,8 +1255,8 @@
 			]
 		},
 		{
-			"id": 42,
-			"url": "/quiz/42",
+			"id": "test-kakoe-anime-vam-stoit-posmotret",
+			"url": "/quiz/test-kakoe-anime-vam-stoit-posmotret",
 			"title": "Какое аниме вам стоит посмотреть?",
 			"description": "Подборка аниме под ваше настроение и предпочтения",
 			"cover": "/Quiz/8/cover-8.png",
@@ -1435,8 +1435,8 @@
 			]
 		},
 		{
-			"id": 43,
-			"url": "/quiz/43",
+			"id": "test-kem-by-vy-bili-v-srednevekovoy-yaponii",
+			"url": "/quiz/test-kem-by-vy-bili-v-srednevekovoy-yaponii",
 			"title": "Кем был бы ты в средневековой Японии?",
 			"description": "Самураи с их честью, войны сёгунов, крестьяне и рис - узнайте своё место в феодальной Японии",
 			"cover": "/Quiz/9/cover-9.png",
@@ -1575,8 +1575,8 @@
 			]
 		},
 		{
-			"id": 44,
-			"url": "/quiz/44",
+			"id": "test-na-znanie-yaponskoy-kultury",
+			"url": "/quiz/test-na-znanie-yaponskoy-kultury",
 			"title": "Бусидо, ниндзя и нэцкэ. Хорошо ли вы знаете культуру Японии?",
 			"description": "Проверьте свои знания о традициях, истории и искусстве Японии",
 			"cover": "/Quiz/10/cover-10.png",
@@ -1686,8 +1686,8 @@
 			]
 		},
 		{
-			"id": 92,
-			"url": "/quiz/92",
+			"id": "test-chto-delat-v-yaponii",
+			"url": "/quiz/test-chto-delat-v-yaponii",
 			"title": "Что делать в Японии? Ваш персональный гид",
 			"description": "Ответьте на вопросы, и мы подберём идеальное аниме, мангу или место для вашего путешествия!",
 			"cover": "/OtherImg/cover-section-1.jpg",

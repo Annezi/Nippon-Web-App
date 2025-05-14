@@ -1,8 +1,8 @@
 {
 	"articles": [
 		{
-			"id": 1,
-			"url": "/articles/1",
+			"id": "kak-klanyayutsya-yaponcy",
+			"url": "/articles/kak-klanyayutsya-yaponcy",
 			"cover": "/Articles/1/cover-1.png",
 			"tags": [
 				"культура"
@@ -29,8 +29,8 @@
 			]
 		},
 		{
-			"id": 2,
-			"url": "/articles/2",
+			"id": "smeshnye-yaponskie-kotiki",
+			"url": "/articles/smeshnye-yaponskie-kotiki",
 			"cover": "/Articles/2/cover-2.png",
 			"tags": [
 				"мемы"
@@ -53,8 +53,8 @@
 			]
 		},
 		{
-			"id": 3,
-			"url": "/articles/3",
+			"id": "vasabi-zelenyj-demon",
+			"url": "/articles/vasabi-zelenyj-demon",
 			"cover": "/Articles/3/cover-3.png",
 			"tags": [
 				"еда"
@@ -77,8 +77,8 @@
 			]
 		},
 		{
-			"id": 4,
-			"url": "/articles/4",
+			"id": "kako-amaterasu-spasla-mir",
+			"url": "/articles/kako-amaterasu-spasla-mir",
 			"cover": "/Articles/4/cover-4.png",
 			"tags": [
 				"мифология"
@@ -101,8 +101,8 @@
 			]
 		},
 		{
-			"id": 5,
-			"url": "/articles/5",
+			"id": "kappa-kitsune-i-tanuki",
+			"url": "/articles/kappa-kitsune-i-tanuki",
 			"cover": "/Articles/5/cover-5.png",
 			"tags": [
 				"мифология"
@@ -125,8 +125,8 @@
 			]
 		},
 		{
-			"id": 6,
-			"url": "/articles/6",
+			"id": "anime-ne-tolko-dlya-detej",
+			"url": "/articles/anime-ne-tolko-dlya-detej",
 			"cover": "/Articles/6/cover-6.png",
 			"tags": [
 				"аниме"
@@ -149,8 +149,8 @@
 			]
 		},
 		{
-			"id": 7,
-			"url": "/articles/7",
+			"id": "yaponiya-glazami-inostranca",
+			"url": "/articles/yaponiya-glazami-inostranca",
 			"cover": "/Articles/7/cover-7.png",
 			"tags": [
 				"культура"
@@ -173,8 +173,8 @@
 			]
 		},
 		{
-			"id": 8,
-			"url": "/articles/8",
+			"id": "vdohnovlyayushchie-anime-geroi",
+			"url": "/articles/vdohnovlyayushchie-anime-geroi",
 			"cover": "/Articles/8/cover-8.png",
 			"tags": [
 				"аниме"
@@ -197,8 +197,8 @@
 			]
 		},
 		{
-			"id": 9,
-			"url": "/articles/9",
+			"id": "pochemu-yaponcy-smeyutsya-inache",
+			"url": "/articles/pochemu-yaponcy-smeyutsya-inache",
 			"cover": "/Articles/9/cover-9.png",
 			"tags": [
 				"культура"
@@ -221,8 +221,8 @@
 			]
 		},
 		{
-			"id": 10,
-			"url": "/articles/10",
+			"id": "ikebana-yazyk-cvetov",
+			"url": "/articles/ikebana-yazyk-cvetov",
 			"cover": "/Articles/10/cover-10.png",
 			"tags": [
 				"культура"
@@ -245,8 +245,8 @@
 			]
 		},
 		{
-			"id": 11,
-			"url": "/articles/11",
+			"id": "kult-supa-v-yaponii",
+			"url": "/articles/kult-supa-v-yaponii",
 			"cover": "/Articles/11/cover-11.png",
 			"tags": [
 				"еда"
@@ -269,8 +269,8 @@
 			]
 		},
 		{
-			"id": 12,
-			"url": "/articles/12",
+			"id": "kitsune-lisy-kotorye-lgut",
+			"url": "/articles/kitsune-lisy-kotorye-lgut",
 			"cover": "/Articles/12/cover-12.png",
 			"tags": [
 				"мифология"
@@ -293,8 +293,8 @@
 			]
 		},
 		{
-			"id": 13,
-			"url": "/articles/13",
+			"id": "anime-kotoroe-izmenilo-mir",
+			"url": "/articles/anime-kotoroe-izmenilo-mir",
 			"cover": "/Articles/13/cover-13.png",
 			"tags": [
 				"аниме"
@@ -317,8 +317,8 @@
 			]
 		},
 		{
-			"id": 14,
-			"url": "/articles/14",
+			"id": "kak-ya-uchila-yaponskij-god",
+			"url": "/articles/kak-ya-uchila-yaponskij-god",
 			"cover": "/Articles/14/cover-14.png",
 			"tags": [
 				"язык"
@@ -341,8 +341,8 @@
 			]
 		},
 		{
-			"id": 15,
-			"url": "/articles/15",
+			"id": "mifologiya-i-demony-yaponii",
+			"url": "/articles/mifologiya-i-demony-yaponii",
 			"cover": "/Articles/15/cover-15.png",
 			"tags": [
 				"культура",
@@ -452,8 +452,8 @@
 			]
 		},
 		{
-			"id": 16,
-			"url": "/articles/16",
+			"id": "vse-o-takoyaki",
+			"url": "/articles/vse-o-takoyaki",
 			"cover": "/Articles/16/cover-16.png",
 			"tags": [
 				"еда",
@@ -549,8 +549,8 @@
 			]
 		},
 		{
-			"id": 17,
-			"url": "/articles/17",
+			"id": "ojisan-gokko",
+			"url": "/articles/ojisan-gokko",
 			"cover": "/Articles/17/cover-17.png",
 			"tags": [
 				"культура",
@@ -604,8 +604,8 @@
 			]
 		},
 		{
-			"id": 18,
-			"url": "/articles/18",
+			"id": "lyubov-v-yaponii",
+			"url": "/articles/lyubov-v-yaponii",
 			"cover": "/Articles/18/cover-18.png",
 			"tags": [
 				"аниме",
@@ -679,8 +679,8 @@
 			]
 		},
 		{
-			"id": 19,
-			"url": "/articles/19",
+			"id": "idealnyj-bento",
+			"url": "/articles/idealnyj-bento",
 			"cover": "/Articles/19/cover-19.png",
 			"tags": [
 				"еда",
@@ -774,8 +774,8 @@
 			]
 		},
 		{
-			"id": 20,
-			"url": "/articles/20",
+			"id": "den-smeha-v-yaponii",
+			"url": "/articles/den-smeha-v-yaponii",
 			"cover": "/Articles/20/cover-20.png",
 			"tags": [
 				"культура",
@@ -849,8 +849,8 @@
 			]
 		},
 		{
-			"id": 87,
-			"url": "/articles/87",
+			"id": "yaponskie-memy",
+			"url": "/articles/yaponskie-memy",
 			"cover": "/Articles/21/cover-21.png",
 			"tags": [
 				"мемы",
@@ -878,8 +878,8 @@
 			]
 		},
 		{
-			"id": 88,
-			"url": "/articles/88",
+			"id": "yaponskij-yazyk",
+			"url": "/articles/yaponskij-yazyk",
 			"cover": "/Articles/22/cover-22.png",
 			"tags": [
 				"язык"
@@ -906,8 +906,8 @@
 			]
 		},
 		{
-			"id": 91,
-			"url": "/articles/91",
+			"id": "populyarnye-yaponskie-blyuda",
+			"url": "/articles/populyarnye-yaponskie-blyuda",
 			"cover": "/Articles/23/cover-23.png",
 			"tags": [
 				"кухня",

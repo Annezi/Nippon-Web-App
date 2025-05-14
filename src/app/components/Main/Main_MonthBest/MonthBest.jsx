@@ -11,10 +11,10 @@ export default function MonthBest() {
 				articles={articles.articles}
 				renderStyle="manual"
 				manualConfig={[
-					{ id: 15, variant: "mini" },
-					{ id: 16, variant: "mini" },
-					{ id: 17, variant: "mini" },
-					{ id: 18, variant: "mini" }
+					{ id: "mifologiya-i-demony-yaponii", variant: "mini" },
+					{ id: "vse-o-takoyaki", variant: "mini" },
+					{ id: "ojisan-gokko", variant: "mini" },
+					{ id: "lyubov-v-yaponii", variant: "mini" }
 				]}
 				limit={4}
 			/>

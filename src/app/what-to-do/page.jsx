@@ -24,7 +24,7 @@ export default function WhatToDoPage() {
 				soloText="что делать — ваш персональный гид по миру японии. у нас есть крутой тест, который подскажет, чем именно заняться. Ответьте на несколько вопросов, и мы подберём для вас идеальное аниме, мангу или место, куда стоит отправиться прямо сейчас."
 				button_text="узнать, что поделать"
 				onButtonClick={() => {
-					window.location.href = '/quiz/92';
+					window.location.href = '/quiz/test-chto-delat-v-yaponii';
 				}}
 			/>
 
@@ -46,7 +46,7 @@ export default function WhatToDoPage() {
 				<ArticleList
 					articles={places.places}
 					renderStyle="manual"
-					filteredIds={[73, 74, 75, 76]}
+					filteredIds={["yaponskiy-sad", "sad-druzhby", "alleya-sakury", "gorodskoy-sad-pushkina"]}
 					contentType="places"
 				/>
 			</div>

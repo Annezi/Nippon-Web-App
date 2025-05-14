@@ -1,9 +1,62 @@
 {
 	"news": [
 		{
-			"id": 21,
-			"url": "/news/21",
+			"id": "cifrovoj-muzej-anime-v-tokio",
+			"url": "/news/cifrovoj-muzej-anime-v-tokio",
 			"cover": "/news/1/cover-1.png",
+			"tags": [
+				"сёнен",
+				"подборка"
+			],
+			"title": "Цифровой музей аниме в токио",
+			"description": "Интерактивная выставка с проекциями культовых сцен из аниме и возможностью создать собственного персонажа.",
+			"readTime": "3 мин",
+			"publishDate": "2023-11-20",
+			"content": [
+				{
+					"type": "text",
+					"text": "Во время строительных работ в Киото археологи обнаружили хорошо сохранившиеся руины буддийского храма, датируемого XII веком."
+				},
+				{
+					"type": "heading",
+					"text": "Историческая ценность"
+				},
+				{
+					"type": "text",
+					"text": "Предполагается, что храм принадлежал школе Тэндай и был разрушен во время междоусобных войн периода Хэйан. Найдены фрагменты ритуальной утвари и деревянные таблички с молитвами."
+				}
+			]
+		},{
+			"id": "bezvizovyj-rezhim",
+			"url": "/news/bezvizovyj-rezhim",
+			"cover": "/news/2/cover-2.png",
+			"tags": [
+				"классика",
+				"рекомендации"
+			],
+			"title": "Безвизовый режим",
+			"description": "С октября 2023 года Россияне смогут посещать Японию без виз на срок до 90 дней.",
+			"readTime": "3 мин",
+			"publishDate": "2023-11-20",
+			"content": [
+				{
+					"type": "text",
+					"text": "Во время строительных работ в Киото археологи обнаружили хорошо сохранившиеся руины буддийского храма, датируемого XII веком."
+				},
+				{
+					"type": "heading",
+					"text": "Историческая ценность"
+				},
+				{
+					"type": "text",
+					"text": "Предполагается, что храм принадлежал школе Тэндай и был разрушен во время междоусобных войн периода Хэйан. Найдены фрагменты ритуальной утвари и деревянные таблички с молитвами."
+				}
+			]
+		},
+		{
+			"id": "neizvestnyj-hram-xii-veka",
+			"url": "/news/neizvestnyj-hram-xii-veka",
+			"cover": "/news/3/cover-3.png",
 			"tags": [
 				"культура",
 				"интересное"
@@ -28,9 +81,9 @@
 			]
 		},
 		{
-			"id": 22,
-			"url": "/news/22",
-			"cover": "/news/2/cover-2.png",
+			"id": "robot-povar-dlya-sushi",
+			"url": "/news/robot-povar-dlya-sushi",
+			"cover": "/news/4/cover-4.png",
 			"tags": [
 				"еда",
 				"интересное"
@@ -55,9 +108,9 @@
 			]
 		},
 		{
-			"id": 23,
-			"url": "/news/23",
-			"cover": "/news/3/cover-3.png",
+			"id": "sedobnaya-upakovka",
+			"url": "/news/sedobnaya-upakovka",
+			"cover": "/news/5/cover-5.png",
 			"tags": [
 				"еда",
 				"интересное"
@@ -82,9 +135,9 @@
 			]
 		},
 		{
-			"id": 24,
-			"url": "/news/24",
-			"cover": "/news/4/cover-4.png",
+			"id": "tsvetenie-lavandy",
+			"url": "/news/tsvetenie-lavandy",
+			"cover": "/news/6/cover-6.png",
 			"tags": [
 				"природа",
 				"культура"
@@ -109,9 +162,9 @@
 			]
 		},
 		{
-			"id": 25,
-			"url": "/news/25",
-			"cover": "/news/5/cover-5.png",
+			"id": "yaponskaya-manga-vsemirnaya-premiya",
+			"url": "/news/yaponskaya-manga-vsemirnaya-premiya",
+			"cover": "/news/7/cover-7.png",
 			"tags": [
 				"манга",
 				"культура"
@@ -136,9 +189,9 @@
 			]
 		},
 		{
-			"id": 26,
-			"url": "/news/26",
-			"cover": "/news/6/cover-6.png",
+			"id": "podvodnyj-restoran-v-osake",
+			"url": "/news/podvodnyj-restoran-v-osake",
+			"cover": "/news/8/cover-8.png",
 			"tags": [
 				"еда",
 				"интересное"
@@ -163,9 +216,9 @@
 			]
 		},
 		{
-			"id": 27,
-			"url": "/news/27",
-			"cover": "/news/7/cover-7.png",
+			"id": "ryokany-v-spiske-unesko",
+			"url": "/news/ryokany-v-spiske-unesko",
+			"cover": "/news/9/cover-9.png",
 			"tags": [
 				"культура",
 				"интересное"
@@ -190,9 +243,9 @@
 			]
 		},
 		{
-			"id": 28,
-			"url": "/news/28",
-			"cover": "/news/8/cover-8.png",
+			"id": "vr-ekskursii-po-yaponii",
+			"url": "/news/vr-ekskursii-po-yaponii",
+			"cover": "/news/10/cover-10.png",
 			"tags": [
 				"интересное",
 				"технологии"
@@ -217,9 +270,9 @@
 			]
 		},
 		{
-			"id": 29,
-			"url": "/news/29",
-			"cover": "/news/9/cover-9.png",
+			"id": "taksi-s-sensorami",
+			"url": "/news/taksi-s-sensorami",
+			"cover": "/news/11/cover-11.png",
 			"tags": [
 				"технологии",
 				"интересное"
@@ -244,9 +297,9 @@
 			]
 		},
 		{
-			"id": 30,
-			"url": "/news/30",
-			"cover": "/news/10/cover-10.png",
+			"id": "otsifrovka-eksponatov",
+			"url": "/news/otsifrovka-eksponatov",
+			"cover": "/news/12/cover-12.png",
 			"tags": [
 				"культура",
 				"технологии"
@@ -271,9 +324,9 @@
 			]
 		},
 		{
-			"id": 31,
-			"url": "/news/31",
-			"cover": "/news/11/cover-11.png",
+			"id": "podushka-s-zapahom-sakury",
+			"url": "/news/podushka-s-zapahom-sakury",
+			"cover": "/news/13/cover-13.png",
 			"tags": [
 				"повседневность",
 				"интересное"
@@ -298,9 +351,9 @@
 			]
 		},
 		{
-			"id": 32,
-			"url": "/news/32",
-			"cover": "/news/12/cover-12.png",
+			"id": "kvadratnye-arbuzy-v-yaponii",
+			"url": "/news/kvadratnye-arbuzy-v-yaponii",
+			"cover": "/news/14/cover-14.png",
 			"tags": [
 				"еда",
 				"интересное"
@@ -325,9 +378,9 @@
 			]
 		},
 		{
-			"id": 33,
-			"url": "/news/33",
-			"cover": "/news/13/cover-13.png",
+			"id": "zemletryasenie-u-fudzi-4-6",
+			"url": "/news/zemletryasenie-u-fudzi-4-6",
+			"cover": "/news/15/cover-15.png",
 			"tags": [
 				"происшествия",
 				"природа"
@@ -362,9 +415,9 @@
 			]
 		},
 		{
-			"id": 34,
-			"url": "/news/34",
-			"cover": "/news/14/cover-14.png",
+			"id": "napavshij-na-kisidu-osuzhden",
+			"url": "/news/napavshij-na-kisidu-osuzhden",
+			"cover": "/news/16/cover-16.png",
 			"tags": [
 				"политика",
 				"преступление"
@@ -395,64 +448,6 @@
 				{
 					"type": "text",
 					"text": "Судья отметил, что подсудимый действовал преднамеренно и осознанно, что делает преступление особо тяжким."
-				}
-			]
-		},
-		{
-			"id": 89,
-			"url": "/news/89",
-			"cover": "/news/15/cover-15.png",
-			"tags": [
-				"происшествия",
-				"природа"
-			],
-			"title": "У подножия Фудзи произошло землетрясение магнитудой 4,6",
-			"description": "Землетрясение магнитудой 4,6 произошло у подножия спящего вулкана Фудзи, расположенного к юго-западу от Токио.",
-			"content": [
-				{
-					"type": "text",
-					"text": "Сегодня утром в префектуре Сидзуока было зарегистрировано землетрясение магнитудой 4,6. Эпицентр подземных толчков находился на глубине 20 километров в непосредственной близости от горы Фудзи."
-				},
-				{
-					"type": "heading",
-					"text": "Подробности инцидента"
-				},
-				{
-					"type": "text",
-					"text": "<span class='custom-dots'>•</span> Время землетрясения: 08:15 по местному времени<br/><span class='custom-dots'>•</span> Пострадавших и разрушений не зарегистрировано<br/><span class='custom-dots'>•</span> Временные перебои в работе железнодорожного сообщения<br/><span class='custom-dots'>•</span> Угрозы цунами нет"
-				},
-				{
-					"type": "text",
-					"text": "Метеорологическое управление Японии сообщает, что данное землетрясение не связано с активизацией вулканической деятельности Фудзи, который последний раз извергался в 1707 году."
-				}
-			]
-		},
-		{
-			"id": 90,
-			"url": "/news/90",
-			"cover": "/news/16/cover-16.png",
-			"tags": [
-				"политика",
-				"преступление"
-			],
-			"title": "Напавшего на Кисиду японца осудили за попытку убийства",
-			"description": "Окружной суд префектуры Вакаяма приговорил 25-летнего Рюдзи Кимуру к 10 годам тюрьмы за покушение на премьер-министра Фумио Кисиду.",
-			"content": [
-				{
-					"type": "text",
-					"text": "Суд префектуры Вакаяма вынес приговор 25-летнему Рюдзи Кимуре, который в апреле 2023 года бросил самодельное взрывное устройство в направлении премьер-министра Фумио Кисиды во время его предвыборного выступления."
-				},
-				{
-					"type": "heading",
-					"text": "Детали приговора"
-				},
-				{
-					"type": "text",
-					"text": "<span class='custom-dots'>•</span> 10 лет лишения свободы<br/><span class='custom-dots'>•</span> Признан виновным по статье \"покушение на убийство\"<br/><span class='custom-dots'>•</span> Суд учел раскаяние подсудимого<br/><span class='custom-dots'>•</span> Прокуратура требовала 12 лет"
-				},
-				{
-					"type": "text",
-					"text": "Инцидент произошел 15 апреля 2023 года во время предвыборной кампании. Взрывное устройство не причинило вреда политику, но один из сотрудников охраны получил легкие травмы."
 				}
 			]
 		}

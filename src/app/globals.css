@@ -246,7 +246,6 @@ a {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 33px;
-	padding: 0 22px 0 22px;
 }
 
 .ContainerBox>*:not(:last-child, :first-child) {

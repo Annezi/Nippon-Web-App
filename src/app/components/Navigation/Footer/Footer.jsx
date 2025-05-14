@@ -7,7 +7,7 @@ export default function Footer() {
 		<div className="footer-container">
 			<div className="footer-content-wrapper">
 				<div className="footer-content-img">
-					<img src="/logo_short-menu.svg" alt="-" />
+					<Link href="/"><img src="/logo_short-menu.svg" alt="-" /></Link>
 				</div>
 				<div className="footer-content-links">
 					<div className="text-subtitle-2" >

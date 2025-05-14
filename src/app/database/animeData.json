@@ -1,9 +1,9 @@
 {
 	"anime": [
 		{
-			"id": 45,
+			"id": "anime-pro-magiyu",
 			"cover": "/anime/1/cover-1.png",
-			"url": "/what-to-do/anime/45",
+			"url": "/what-to-do/anime/anime-pro-magiyu",
 			"tags": [
 				"фэнтези",
 				"подборки"
@@ -28,9 +28,9 @@
 			]
 		},
 		{
-			"id": 46,
+			"id": "anime-dlya-novichkov",
 			"cover": "/anime/2/cover-2.png",
-			"url": "/what-to-do/anime/46",
+			"url": "/what-to-do/anime/anime-dlya-novichkov",
 			"tags": [
 				"подборки",
 				"классика"
@@ -55,9 +55,9 @@
 			]
 		},
 		{
-			"id": 47,
+			"id": "romanticheskoe-anime",
 			"cover": "/anime/3/cover-3.png",
-			"url": "/what-to-do/anime/47",
+			"url": "/what-to-do/anime/romanticheskoe-anime",
 			"tags": [
 				"сёдзё",
 				"романтика"
@@ -82,9 +82,9 @@
 			]
 		},
 		{
-			"id": 48,
+			"id": "vdohnovlyayushchee-anime",
 			"cover": "/anime/4/cover-4.png",
-			"url": "/what-to-do/anime/48",
+			"url": "/what-to-do/anime/vdohnovlyayushchee-anime",
 			"tags": [
 				"сёнен",
 				"интересное"
@@ -109,9 +109,9 @@
 			]
 		},
 		{
-			"id": 49,
+			"id": "anime-dlya-fanatov-mangi",
 			"cover": "/anime/5/cover-5.png",
-			"url": "/what-to-do/anime/49",
+			"url": "/what-to-do/anime/anime-dlya-fanatov-mangi",
 			"tags": [
 				"рекомендации",
 				"обсуждения"
@@ -136,9 +136,9 @@
 			]
 		},
 		{
-			"id": 50,
+			"id": "anime-magiya-i-priklyucheniya",
 			"cover": "/anime/6/cover-6.png",
-			"url": "/what-to-do/anime/50",
+			"url": "/what-to-do/anime/anime-magiya-i-priklyucheniya",
 			"tags": [
 				"фэнтези",
 				"приключения"
@@ -163,9 +163,9 @@
 			]
 		},
 		{
-			"id": 51,
+			"id": "anime-protiv-trudnostey",
 			"cover": "/anime/7/cover-7.png",
-			"url": "/what-to-do/anime/51",
+			"url": "/what-to-do/anime/anime-protiv-trudnostey",
 			"tags": [
 				"интересное",
 				"подборки"
@@ -190,9 +190,9 @@
 			]
 		},
 		{
-			"id": 52,
+			"id": "silnye-zhenskie-obrazy-v-anime",
 			"cover": "/anime/8/cover-8.png",
-			"url": "/what-to-do/anime/52",
+			"url": "/what-to-do/anime/silnye-zhenskie-obrazy-v-anime",
 			"tags": [
 				"сёдзё",
 				"интересное"
@@ -217,9 +217,9 @@
 			]
 		},
 		{
-			"id": 53,
+			"id": "korotkie-anime",
 			"cover": "/anime/9/cover-9.png",
-			"url": "/what-to-do/anime/53",
+			"url": "/what-to-do/anime/korotkie-anime",
 			"tags": [
 				"короткие",
 				"рекомендации"
@@ -244,9 +244,9 @@
 			]
 		},
 		{
-			"id": 54,
+			"id": "detektivnoe-anime",
 			"cover": "/anime/10/cover-10.png",
-			"url": "/what-to-do/anime/54",
+			"url": "/what-to-do/anime/detektivnoe-anime",
 			"tags": [
 				"сейнен",
 				"детективы"
@@ -271,9 +271,9 @@
 			]
 		},
 		{
-			"id": 55,
+			"id": "anime-pro-shkolu",
 			"cover": "/anime/11/cover-11.png",
-			"url": "/what-to-do/anime/55",
+			"url": "/what-to-do/anime/anime-pro-shkolu",
 			"tags": [
 				"сёдзё",
 				"школа"
@@ -298,9 +298,9 @@
 			]
 		},
 		{
-			"id": 56,
+			"id": "dramaticheskoe-anime",
 			"cover": "/anime/12/cover-12.png",
-			"url": "/what-to-do/anime/56",
+			"url": "/what-to-do/anime/dramaticheskoe-anime",
 			"tags": [
 				"драма",
 				"рекомендации"
@@ -325,9 +325,9 @@
 			]
 		},
 		{
-			"id": 57,
+			"id": "anime-pro-edu",
 			"cover": "/anime/13/cover-13.png",
-			"url": "/what-to-do/anime/57",
+			"url": "/what-to-do/anime/anime-pro-edu",
 			"tags": [
 				"еда",
 				"интересное"
@@ -352,9 +352,9 @@
 			]
 		},
 		{
-			"id": 58,
+			"id": "anime-i-yaponskaya-kultura",
 			"cover": "/anime/14/cover-14.png",
-			"url": "/what-to-do/anime/58",
+			"url": "/what-to-do/anime/anime-i-yaponskaya-kultura",
 			"tags": [
 				"интересное",
 				"обсуждения"

@@ -3,17 +3,15 @@ import mangaData from "../../../database/mangaData.json";
 import animeData from "../../../database/animeData.json";
 import placeData from "../../../database/placeData.json";
 
-
 async function getDataFromDatabase(id, category) {
-	const findid = parseInt(id);
 	if (category === "manga") {
-		const mangaItem = mangaData.manga.find(item => item.id === findid);
+		const mangaItem = mangaData.manga.find(item => item.id.toString() === id.toString());
 		return mangaItem || null;
 	} else if (category === "anime") {
-		const animeItem = animeData.anime.find(item => item.id === findid);
+		const animeItem = animeData.anime.find(item => item.id.toString() === id.toString());
 		return animeItem || null;
 	} else if (category === "places") {
-		const placeItem = placeData.places.find(item => item.id === findid);
+		const placeItem = placeData.places.find(item => item.id.toString() === id.toString());
 		return placeItem || null;
 	} else {
 		return null;
@@ -21,12 +19,11 @@ async function getDataFromDatabase(id, category) {
 }
 
 export async function generateMetadata({ params }) {
-	const { category, id } = await params;
+	const { category, id } = params;
 	const WTDPage = await getDataFromDatabase(id, category);
-	// console.log(WTDPage);
-	// console.log("Metadata WTDPage:", WTDPage);
+
 	return {
-		title: WTDPage?.title || "Новость не найдена",
+		title: WTDPage?.title || "Материал не найден",
 		description: WTDPage?.description || "",
 		openGraph: {
 			images: WTDPage?.cover ? [{ url: WTDPage.cover }] : []
@@ -35,9 +32,10 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function WTDPageDetail({ params }) {
-	const { category, id } = await params;
+	const { category, id } = params;
 	const WTDPage = await getDataFromDatabase(id, category);
-	if (!WTDPage) return <div>Новость не найдена</div>;
+
+	if (!WTDPage) return <div>Материал не найден</div>;
 
 	return <WTDPageDetailClient WTDPage={WTDPage} />;
 }

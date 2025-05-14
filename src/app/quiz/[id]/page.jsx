@@ -2,8 +2,7 @@ import QuizDetailClient from "./QuizDetailClient";
 import quizData from "../../database/quizData.json";
 
 async function getQuizById(id) {
-	const quizId = parseInt(id);
-	const quizItem = quizData.quiz.find(item => item.id === quizId);
+	const quizItem = quizData.quiz.find(item => item.id === id);
 	return quizItem || null;
 }
 

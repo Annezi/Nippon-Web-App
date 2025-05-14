@@ -1,9 +1,9 @@
 {
 	"places": [
 		{
-			"id": 73,
+			"id": "yaponskiy-sad",
 			"cover": "/place/1/cover-1.png",
-			"url": "/what-to-do/places/73",
+			"url": "/what-to-do/places/yaponskiy-sad",
 			"tags": [
 				"москва",
 				"выставка"
@@ -38,9 +38,9 @@
 			]
 		},
 		{
-			"id": 74,
+			"id": "sad-druzhby",
 			"cover": "/place/2/cover-2.png",
-			"url": "/what-to-do/places/74",
+			"url": "/what-to-do/places/sad-druzhby",
 			"tags": [
 				"спб",
 				"место"
@@ -75,9 +75,9 @@
 			]
 		},
 		{
-			"id": 75,
+			"id": "alleya-sakury",
 			"cover": "/place/3/cover-3.png",
-			"url": "/what-to-do/places/75",
+			"url": "/what-to-do/places/alleya-sakury",
 			"tags": [
 				"владивосток",
 				"место"
@@ -112,9 +112,9 @@
 			]
 		},
 		{
-			"id": 76,
+			"id": "gorodskoy-sad-pushkina",
 			"cover": "/place/4/cover-4.png",
-			"url": "/what-to-do/places/76",
+			"url": "/what-to-do/places/gorodskoy-sad-pushkina",
 			"tags": [
 				"челябинск",
 				"место"
@@ -145,9 +145,9 @@
 			]
 		},
 		{
-			"id": 77,
+			"id": "luchshiy-ramen-v-rossii",
 			"cover": "/place/5/cover-5.png",
-			"url": "/what-to-do/places/77",
+			"url": "/what-to-do/places/luchshiy-ramen-v-rossii",
 			"tags": [
 				"еда",
 				"рекомендации"
@@ -178,9 +178,9 @@
 			]
 		},
 		{
-			"id": 78,
+			"id": "festivali-v-moskve",
 			"cover": "/place/6/cover-6.png",
-			"url": "/what-to-do/places/78",
+			"url": "/what-to-do/places/festivali-v-moskve",
 			"tags": [
 				"москва",
 				"культура"
@@ -211,9 +211,9 @@
 			]
 		},
 		{
-			"id": 79,
+			"id": "mesta-v-yaponii-dlya-fanatov-anime",
 			"cover": "/place/7/cover-7.png",
-			"url": "/what-to-do/places/79",
+			"url": "/what-to-do/places/mesta-v-yaponii-dlya-fanatov-anime",
 			"tags": [
 				"япония",
 				"аниме"
@@ -244,9 +244,9 @@
 			]
 		},
 		{
-			"id": 80,
+			"id": "yaponskie-muzei-v-evrope",
 			"cover": "/place/8/cover-8.png",
-			"url": "/what-to-do/places/80",
+			"url": "/what-to-do/places/yaponskie-muzei-v-evrope",
 			"tags": [
 				"европа",
 				"музей"
@@ -277,9 +277,9 @@
 			]
 		},
 		{
-			"id": 81,
+			"id": "yaponskie-knigi-v-rossii",
 			"cover": "/place/9/cover-9.png",
-			"url": "/what-to-do/places/81",
+			"url": "/what-to-do/places/yaponskie-knigi-v-rossii",
 			"tags": [
 				"россия",
 				"культура"
@@ -310,9 +310,9 @@
 			]
 		},
 		{
-			"id": 82,
+			"id": "luchshie-yaponskie-magaziny",
 			"cover": "/place/10/cover-10.png",
-			"url": "/what-to-do/places/82",
+			"url": "/what-to-do/places/luchshie-yaponskie-magaziny",
 			"tags": [
 				"россия",
 				"рекомендации"
@@ -343,9 +343,9 @@
 			]
 		},
 		{
-			"id": 83,
+			"id": "populyarnye-mesta-v-tokio",
 			"cover": "/place/11/cover-11.png",
-			"url": "/what-to-do/places/83",
+			"url": "/what-to-do/places/populyarnye-mesta-v-tokio",
 			"tags": [
 				"япония",
 				"рекомендации"
@@ -376,9 +376,9 @@
 			]
 		},
 		{
-			"id": 84,
+			"id": "kioto-gorod-vremeni",
 			"cover": "/place/12/cover-12.png",
-			"url": "/what-to-do/places/84",
+			"url": "/what-to-do/places/kioto-gorod-vremeni",
 			"tags": [
 				"япония",
 				"культура"
@@ -409,9 +409,9 @@
 			]
 		},
 		{
-			"id": 85,
+			"id": "osaka-ulichnaya-eda",
 			"cover": "/place/13/cover-13.png",
-			"url": "/what-to-do/places/85",
+			"url": "/what-to-do/places/osaka-ulichnaya-eda",
 			"tags": [
 				"япония",
 				"еда"
@@ -442,9 +442,9 @@
 			]
 		},
 		{
-			"id": 86,
+			"id": "yaponskie-fud-korty-v-rossii",
 			"cover": "/place/14/cover-14.png",
-			"url": "/what-to-do/places/86",
+			"url": "/what-to-do/places/yaponskie-fud-korty-v-rossii",
 			"tags": [
 				"россия",
 				"еда"
