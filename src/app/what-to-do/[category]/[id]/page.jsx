@@ -2,6 +2,7 @@ import WTDPageDetailClient from "./WTDPageClient";
 import mangaData from "../../../database/mangaData.json";
 import animeData from "../../../database/animeData.json";
 import placeData from "../../../database/placeData.json";
+import collectionData from "../../../database/collectionData.json";
 
 async function getDataFromDatabase(id, category) {
 	if (category === "manga") {
@@ -13,6 +14,9 @@ async function getDataFromDatabase(id, category) {
 	} else if (category === "places") {
 		const placeItem = placeData.places.find(item => item.id.toString() === id.toString());
 		return placeItem || null;
+    } else if (category === "collections") {
+        const collectionItem = collectionData.collections.find(item => item.id.toString() === id.toString());
+        return collectionItem || null;
 	} else {
 		return null;
 	}

@@ -10,11 +10,13 @@ export default function ToDo() {
 				<SighBanner
 					cover="./OtherImg/cover-section-5.jpg"
 					description="популярные японские места в россии"
-					button_text="Решить куда пойти" />
+					button_text="Решить куда пойти" 
+					url="/what-to-do/places" />
 				<SighBanner
 					cover="./OtherImg/cover-section-6.jpg"
 					description="зимний сезон аниме"
-					button_text="Посмотреть новинки" />
+					button_text="Посмотреть новинки" 
+					url="/what-to-do/anime" />
 			</div>
 		</div>
 	)

@@ -14,12 +14,108 @@
 .sub-info-right {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	gap: 28px;
-	width: 440px;
-	height: 221px;
+	max-width: 440px;
+	width: 100%;
+	min-height: 221px;
+	max-height: 240px;
 	padding: 20px;
 	background-color: var(--red-color);
 	border-radius: 10px;
+}
+
+.subscription-form {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	width: 100%;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.input-field {
+	width: 100%;
+	max-width: 400px;
+	height: 40px;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid var(--light-gray-color);
+	font-size: 16px;
+	outline: none;
+	background-color: var(--red-color);
+	color: var(--white-color);
+	transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+	border-bottom-color: var(--white-color);
+}
+
+.input-error {
+	border-bottom-color: var(--white-color) !important;
+}
+
+.error-message {
+	color: var(--white-color);
+	font-size: 14px;
+	margin-top: -10px;
+}
+
+.subscribe-button {
+	max-width: 400px;
+	width: 100%;
+	height: 55px;
+	background-color: var(--white-color);
+	border-radius: 10px;
+	border: none;
+	color: var(--black-color);
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.input-field::placeholder {
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.subscribe-button:hover {
+	background-color: var(--red-color);
+	color: var(--white-color);
+	border: 2px solid var(--white-color);
+}
+
+.subscribe-button.subscribed {
+	background-color: white;
+	color: var(--black-color);
+}
+
+.success-message {
+	font-size: 20px;
+	color: var(--white-color);
+	text-align: center;
+	padding: 20px;
+	background-color: var(--red-color);
+	border-radius: 10px;
+	width: 100%;
+	max-width: 400px;
+	animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @media screen and (max-width: 1400px) {
@@ -37,17 +133,15 @@
 		margin-bottom: 40px;
 		width: 80%;
 	}
-
-	.sub-info-right {
-		max-width: 440px;
-		width: 100%;
-		height: 221px;
-	}
 }
 
 
 @media screen and (max-width: 390px) {
-	.subscribtion-container { 
+	.subscribtion-container {
 		padding-bottom: 50px;
+	}
+
+	.sub-info-right {
+		width: 90%;
 	}
 }

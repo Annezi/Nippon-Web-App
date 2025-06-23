@@ -1,4 +1,5 @@
 .banner-container {
+	position: relative;
 	width: 100%;
 	max-width: 1360px;
 	min-height: 600px;
@@ -18,7 +19,7 @@
 	min-height: 600px;
 	position: absolute;
 	background: rgba(0, 0, 0, 0.5);
-	margin: -40px 0px 0px -40px;
+	inset: 0;
 	border-radius: 20px;
 	z-index: 4;
 }
@@ -86,41 +87,5 @@
 		flex-direction: row;
 		align-items: flex-start;
 		margin-top: 20px;
-	}
-}
-
-@media screen and (max-width : 1440px) {
-	.darken-bg {
-		width: 97%;
-	}
-}
-
-@media screen and (max-width : 1024px) {
-	.darken-bg {
-		width: 96%;
-	}
-}
-
-@media screen and (max-width : 768px) {
-	.darken-bg {
-		width: 94.5%;
-	}
-}
-
-@media screen and (max-width : 426px) {
-	.darken-bg {
-		width: 90%;
-	}
-}
-
-@media screen and (max-width : 376px) {
-	.darken-bg {
-		width: 88.5%;
-	}
-}
-
-@media screen and (max-width : 320px) {
-	.darken-bg {
-		width: 86%;
 	}
 }

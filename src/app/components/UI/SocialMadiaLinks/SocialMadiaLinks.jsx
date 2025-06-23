@@ -30,7 +30,7 @@ export default function SocialMadiaLinks() {
 
 	
     const handleTgClick = () => {
-        window.open('https://t.me/michi_jp', '_blank');
+        window.open('https://t.me/nip_pon', '_blank');
     };
 	
 	useEffect(() => {

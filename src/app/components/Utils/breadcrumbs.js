@@ -12,7 +12,8 @@ export const generateBreadcrumbs = (pathname) => {
 		
 		'manga': 'Манга',
 		'anime': 'Аниме',
-		'places': 'Куда сходить'
+		'places': 'Куда сходить',
+		'collections': 'Коллекции'
 	};
 
 	const breadcrumbs = pathArray.map((path, index) => {

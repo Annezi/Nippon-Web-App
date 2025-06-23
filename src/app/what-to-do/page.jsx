@@ -29,16 +29,18 @@ export default function WhatToDoPage() {
 			/>
 
 			<div className="wtd-cards-container">
-				{whatToDoSections.sections?.map((section) => (
-					<WTDCard
-						key={section.id}
-						id={section.id}
-						cover={section.cover}
-						description={section.description}
-						contentType={section.contentType}
-						url={section.url}
-					/>
-				))}
+				{whatToDoSections.sections
+					?.filter(section => [1, 2, 3].includes(Number(section.id)))
+					.map((section) => (
+						<WTDCard
+							key={section.id}
+							id={section.id}
+							cover={section.cover}
+							description={section.description}
+							contentType={section.contentType}
+							url={section.url}
+						/>
+					))}
 			</div>
 
 			<div className="month-best-box">
@@ -55,21 +57,25 @@ export default function WhatToDoPage() {
 				<TitlePlaceholder className="title-placeholder" text="подборки аниме" />
 				<div className="todo-banners-wrapper">
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-1.png"
+						cover="./collections/1/SignBanner-cover-1.png"
 						description="спортивные аниме"
-						button_text="Закинуть данк" />
+						button_text="Закинуть данк"
+						url="/what-to-do/collections/sportivnye-anime" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-2.png"
+						cover="./collections/2/SignBanner-cover-2.png"
 						description="аниме про волшебников"
-						button_text="Наколдовать проду" />
+						button_text="Наколдовать проду"
+						url="/what-to-do/collections/anime-pro-volshebnikov" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-3.png"
+						cover="./collections/3/SignBanner-cover-3.png"
 						description="аниме про попаданцев"
-						button_text="Переродиться" />
+						button_text="Переродиться"
+						url="/what-to-do/collections/anime-pro-popadancev" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-4.png"
+						cover="./collections/4/SignBanner-cover-4.png"
 						description="романтические аниме"
-						button_text="Покраснеть и попищать" />
+						button_text="Покраснеть и попищать"
+						url="/what-to-do/collections/romanticheskie-anime" />
 				</div>
 			</div>
 
@@ -77,21 +83,25 @@ export default function WhatToDoPage() {
 				<TitlePlaceholder className="title-placeholder" text="подборки манг" />
 				<div className="todo-banners-wrapper">
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-5.png"
+						cover="./collections/5/SignBanner-cover-5.png"
 						description="психологические сёнены"
-						button_text="Стать психом" />
+						button_text="Стать психом"
+						url="/what-to-do/collections/psihologicheskie-seneny" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-6.png"
+						cover="./collections/6/SignBanner-cover-6.png"
 						description="исекай-манги"
-						button_text="Стать магом 100lvl" />
+						button_text="Стать магом 100lvl"
+						url="/what-to-do/collections/isekai-mangi" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-7.png"
+						cover="./collections/7/SignBanner-cover-7.png"
 						description="сёдзе манги"
-						button_text="Романтично поплакать" />
+						button_text="Романтично поплакать"
+						url="/what-to-do/collections/sedze-mangi" />
 					<SighBanner
-						cover="./OtherImg/SignBanner-cover-8.png"
+						cover="./collections/8/SignBanner-cover-8.png"
 						description="супергеройские манги"
-						button_text="Спасти мир" />
+						button_text="Спасти мир"
+						url="/what-to-do/collections/supergerojskie-mangi" />
 				</div>
 			</div>
 

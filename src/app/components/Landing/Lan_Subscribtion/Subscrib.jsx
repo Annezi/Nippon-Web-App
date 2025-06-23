@@ -1,43 +1,88 @@
 import './Subscrib.css';
-import Button from '../../UI/Sub_Button/Sub_Button';
-import SubForm from '../../UI/Sub_Form/Sub_Form';
+import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
 export default function Subscrib({ text }) {
-	const [isSubscribed, setIsSubscribed] = useState(false);
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
+	const [isSubmitted, setIsSubmitted] = useState(false);
 
-	const handleSubscribe = () => {
-		if (!name.trim() || !email.trim()) {
-			alert('Пожалуйста, заполните все поля!');
-			return;
-		}
+	const {
+		register,
+		handleSubmit,
+		formState: { errors, isSubmitting },
+		reset
+	} = useForm();
 
-		setIsSubscribed(true);
-		console.log('Подписка:', { name, email });
+	const onSubmit = (data) => {
+		console.log('Подписка:', data);
 
 		// Отправка события в Яндекс.Метрику
 		if (typeof ym !== 'undefined') {
-			ym(100267604, 'reachGoal', 'subscribe'); // Цель "Подписка"
-			ym(100267604, 'reachGoal', 'subscribe_button_click'); // Цель "Клик по кнопке"
+			ym(100267604, 'reachGoal', 'subscribe');
+			ym(100267604, 'reachGoal', 'subscribe_button_click');
 		}
 
-		setName('');
-		setEmail('');
+		setIsSubmitted(true);
+		reset();
+
+		setTimeout(() => {
+			setIsSubmitted(false);
+		}, 3000);
 	};
 
 	return (
 		<div className="subscribtion-container">
 			<div className="sub-info-left text-title-1">{text}</div>
 			<div className="sub-info-right">
-				<SubForm
-					name={name}
-					email={email}
-					setName={setName}
-					setEmail={setEmail}
-				/>
-				<Button isSubscribed={isSubscribed} onClick={handleSubscribe} />
+				{isSubmitted ? (
+					<div className="success-message">
+						Вы успешно подписались, Аригато!
+					</div>
+				) : (
+					<form onSubmit={handleSubmit(onSubmit)} className="subscription-form">
+						
+						<div className="input-group">
+							<input
+								type="text"
+								placeholder="Введите имя"
+								{...register("name", {
+									required: "Имя обязательно",
+									minLength: {
+										value: 2,
+										message: "Минимум 2 символа"
+									}
+								})}
+								className={`input-field ${errors.name ? 'input-error' : ''}`}
+							/>
+							{errors.name && <span className="error-message">{errors.name.message}</span>}
+						</div>
+
+						<div className="input-group">
+							<input
+								type="email"
+								placeholder="Введите почту"
+								{...register("email", {
+									required: "Почта обязательна",
+									pattern: {
+										value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+										message: "Неверный формат email"
+									}
+								})}
+								className={`input-field ${errors.email ? 'input-error' : ''}`}
+							/>
+							{errors.email && <span className="error-message">{errors.email.message}</span>}
+						</div>
+
+						<button
+							type="submit"
+							disabled={isSubmitting}
+							className={`subscribe-button`}
+						>
+							<div className="text-subtitle-s">
+								Коничива
+							</div>
+						</button>
+					</form>
+				)}
 			</div>
 		</div>
 	);
