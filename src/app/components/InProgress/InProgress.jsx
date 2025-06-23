@@ -6,8 +6,8 @@ export default function Module() {
 			<div className="inProgress-content">
 				<img src="/InProgress/Japan_bg.png" alt="Japan" />
 				<div className="inProgress-text">
-					<div className="text-subtitle-1">«Строки кода летят, <br /> Сайт в разработке ждёт, <br /> Зима придёт скоро».</div>
-					<div className="text-subtitle-1">@МИЧИ</div>
+					<div className="text-subtitle-1">«404 путь прерван, <br /> Фудзи в облаках исчезла — <br /> Домой через «Назад».</div>
+					<div className="text-subtitle-1">@НИППОН</div>
 				</div>
 			</div>
 		</div>
