@@ -63,7 +63,7 @@ export default function Subscrib({ text }) {
 								{...register("email", {
 									required: "Почта обязательна",
 									pattern: {
-										value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+										value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 										message: "Неверный формат email"
 									}
 								})}
