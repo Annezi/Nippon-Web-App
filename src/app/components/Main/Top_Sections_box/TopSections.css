@@ -68,8 +68,6 @@
 /* Responsive styles */
 @media (max-width: 1400px) {
 	.TopSections-container {
-		padding-top: 60px;
-		margin-top: -33px;
 		flex-direction: column;
 		align-items: center;
 	}
