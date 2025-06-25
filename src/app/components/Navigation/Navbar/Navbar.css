@@ -5,6 +5,7 @@
 	justify-content: center;
 	width: 100%;
 	max-width: 1360px;
+	min-width: 288px;
 	z-index: 5;
 }
 

@@ -1,8 +1,9 @@
 'use client';
 import "../globals.css";
+import ScrollReveal from "../components/Utils/ScrollReveal";
 import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
-import ArticleList from '../components/Articles/Article_List/ArticleList'; 
+import ArticleList from '../components/Articles/Article_List/ArticleList';
 import news from '../database/newsData.json';
 import Footer from "../components/Navigation/Footer/Footer";
 import MonthBest from "../components/Main/Main_MonthBest/MonthBest";
@@ -19,14 +20,18 @@ export default function NewsPage() {
 				contentType="news"
 			/>
 
-			<ArticleList
-				articles={news.news}
-				renderStyle="catalog"
-				contentType="news"
-				tagFilter={true}
-			/>
+			<ScrollReveal index={2}>
+				<ArticleList
+					articles={news.news}
+					renderStyle="catalog"
+					contentType="news"
+					tagFilter={true}
+				/>
+			</ScrollReveal>
 
-			<MonthBest />
+			<ScrollReveal index={3}>
+				<MonthBest />
+			</ScrollReveal>
 			<Footer />
 		</div>
 	);

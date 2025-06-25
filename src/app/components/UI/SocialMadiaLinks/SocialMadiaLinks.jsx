@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import './SocialMadiaLinks.css'
+import ScrollReveal from '../../Utils/ScrollReveal';
 
 export default function SocialMadiaLinks() {
 	const [showModal, setShowModal] = useState(false);
@@ -42,6 +43,7 @@ export default function SocialMadiaLinks() {
 	  }, [showModal]);
 
 	return (
+		<ScrollReveal index={1}>
 		<div className="share-buttons">
 			<div className="share-button" onClick={handleLinkClick}>
 				<img src="/Icons/Icon-link.svg" alt="Link" />
@@ -80,5 +82,6 @@ export default function SocialMadiaLinks() {
 				</div>
 			)}
 		</div>
+		</ScrollReveal>
 	);
 }

@@ -1,7 +1,10 @@
 'use client';
 import "../globals.css";
+import "../components/Main/Main_MonthBest/MonthBest.css";
 import "./what-to-do.css";
 import "../components/Main/Main_ToDo/ToDo.css"
+
+import ScrollReveal from "../components/Utils/ScrollReveal";
 import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
 import Footer from "../components/Navigation/Footer/Footer";
@@ -27,82 +30,95 @@ export default function WhatToDoPage() {
 					window.location.href = '/quiz/test-chto-delat-v-yaponii';
 				}}
 			/>
+			<ScrollReveal index={1}>
+				<div className="wtd-cards-container">
+					{whatToDoSections.sections
+						?.filter(section => [1, 2, 3].includes(Number(section.id)))
+						.map((section) => (
+							<WTDCard
+								key={section.id}
+								id={section.id}
+								cover={section.cover}
+								buttonText={section.buttonText}
+								contentType={section.contentType}
+								onButtonClick={() => {
+									window.location.href = section.url;
+								}}
+							/>
+						))}
+				</div>
+			</ScrollReveal>
 
-			<div className="wtd-cards-container">
-				{whatToDoSections.sections
-					?.filter(section => [1, 2, 3].includes(Number(section.id)))
-					.map((section) => (
-						<WTDCard
-							key={section.id}
-							id={section.id}
-							cover={section.cover}
-							description={section.description}
-							contentType={section.contentType}
-							url={section.url}
-						/>
-					))}
-			</div>
+			<ScrollReveal index={2}>
+				<div className="month-best-box">
+					<TitlePlaceholder text="лучшие японские места в россии" />
+					<ArticleList
+						articles={places.places}
+						renderStyle="manual"
+						filteredIds={["yaponskiy-sad", "sad-druzhby", "alleya-sakury", "gorodskoy-sad-pushkina"]}
+						contentType="places"
+					/>
+				</div>
+			</ScrollReveal>
 
-			<div className="month-best-box">
-				<TitlePlaceholder text="лучшие японские места в россии" />
-				<ArticleList
-					articles={places.places}
-					renderStyle="manual"
-					filteredIds={["yaponskiy-sad", "sad-druzhby", "alleya-sakury", "gorodskoy-sad-pushkina"]}
-					contentType="places"
-				/>
+			<div className="todo-box">
+				<ScrollReveal index={3}>
+					<TitlePlaceholder className="title-placeholder" text="подборки аниме" />
+				</ScrollReveal>
+				<ScrollReveal index={4}>
+					<div className="todo-banners-wrapper">
+						<SighBanner
+							cover="./collections/1/SignBanner-cover-1.png"
+							description="спортивные аниме"
+							button_text="Закинуть данк"
+							url="/what-to-do/collections/sportivnye-anime" />
+						<SighBanner
+							cover="./collections/2/SignBanner-cover-2.png"
+							description="аниме про волшебников"
+							button_text="Наколдовать проду"
+							url="/what-to-do/collections/anime-pro-volshebnikov" />
+						<SighBanner
+							cover="./collections/3/SignBanner-cover-3.png"
+							description="аниме про попаданцев"
+							button_text="Переродиться"
+							url="/what-to-do/collections/anime-pro-popadancev" />
+						<SighBanner
+							cover="./collections/4/SignBanner-cover-4.png"
+							description="романтические аниме"
+							button_text="Покраснеть и попищать"
+							url="/what-to-do/collections/romanticheskie-anime" />
+					</div>
+				</ScrollReveal>
 			</div>
 
 			<div className="todo-box">
-				<TitlePlaceholder className="title-placeholder" text="подборки аниме" />
-				<div className="todo-banners-wrapper">
-					<SighBanner
-						cover="./collections/1/SignBanner-cover-1.png"
-						description="спортивные аниме"
-						button_text="Закинуть данк"
-						url="/what-to-do/collections/sportivnye-anime" />
-					<SighBanner
-						cover="./collections/2/SignBanner-cover-2.png"
-						description="аниме про волшебников"
-						button_text="Наколдовать проду"
-						url="/what-to-do/collections/anime-pro-volshebnikov" />
-					<SighBanner
-						cover="./collections/3/SignBanner-cover-3.png"
-						description="аниме про попаданцев"
-						button_text="Переродиться"
-						url="/what-to-do/collections/anime-pro-popadancev" />
-					<SighBanner
-						cover="./collections/4/SignBanner-cover-4.png"
-						description="романтические аниме"
-						button_text="Покраснеть и попищать"
-						url="/what-to-do/collections/romanticheskie-anime" />
-				</div>
-			</div>
-
-			<div className="todo-box">
-				<TitlePlaceholder className="title-placeholder" text="подборки манг" />
-				<div className="todo-banners-wrapper">
-					<SighBanner
-						cover="./collections/5/SignBanner-cover-5.png"
-						description="психологические сёнены"
-						button_text="Стать психом"
-						url="/what-to-do/collections/psihologicheskie-seneny" />
-					<SighBanner
-						cover="./collections/6/SignBanner-cover-6.png"
-						description="исекай-манги"
-						button_text="Стать магом 100lvl"
-						url="/what-to-do/collections/isekai-mangi" />
-					<SighBanner
-						cover="./collections/7/SignBanner-cover-7.png"
-						description="сёдзе манги"
-						button_text="Романтично поплакать"
-						url="/what-to-do/collections/sedze-mangi" />
-					<SighBanner
-						cover="./collections/8/SignBanner-cover-8.png"
-						description="супергеройские манги"
-						button_text="Спасти мир"
-						url="/what-to-do/collections/supergerojskie-mangi" />
-				</div>
+				<ScrollReveal index={5}>
+					<TitlePlaceholder className="title-placeholder" text="подборки манг" />
+				</ScrollReveal>
+				<ScrollReveal index={6}>
+					<div className="todo-banners-wrapper">
+						<SighBanner
+							cover="./collections/5/SignBanner-cover-5.png"
+							description="психологические сёнены"
+							button_text="Стать психом"
+							url="/what-to-do/collections/psihologicheskie-seneny" />
+						<SighBanner
+							cover="./collections/6/SignBanner-cover-6.png"
+							description="исекай-манги"
+							button_text="Стать магом 100lvl"
+							url="/what-to-do/collections/isekai-mangi" />
+						<SighBanner
+							cover="./collections/7/SignBanner-cover-7.png"
+							description="сёдзе манги"
+							button_text="Романтично поплакать"
+							url="/what-to-do/collections/sedze-mangi" />
+						<SighBanner
+							cover="./collections/8/SignBanner-cover-8.png"
+							description="супергеройские манги"
+							button_text="Спасти мир"
+							url="/what-to-do/collections/supergerojskie-mangi" />
+					</div>
+				</ScrollReveal>
 			</div>
 
 			<Footer />

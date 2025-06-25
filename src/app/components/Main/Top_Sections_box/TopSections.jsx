@@ -1,5 +1,8 @@
 import React from 'react';
 import './TopSections.css';
+
+
+import ScrollReveal from '../../Utils/ScrollReveal';
 import ArticleList from "../../Articles/Article_List/ArticleList";
 import articles from "../../../database/articlesData.json";
 import news from "../../../database/newsData.json";
@@ -18,7 +21,7 @@ export default function TopSections({
 	sections,
 	contentType = "articles",
 	displayMode = "double", // 'double' (две карточки) или 'solo' (одна карточка + кнопка)
-	// Пропсы для режима 'solo'
+
 	soloImage = "",
 	soloText = "",
 	button_text = "",
@@ -41,17 +44,19 @@ export default function TopSections({
 								</div>
 								{articleExists ? (
 									<div className="TopSections-article-list-wrapper">
-										<ArticleList
-											articles={data}
-											renderStyle="manual"
-											manualConfig={[{
-												id: section.articleId,
-												variant: "custom",
-												basePath: `/${contentType}/`
-											}]}
-											filteredIds={[section.articleId]}
-											contentType={contentType}
-										/>
+										<ScrollReveal index={0}>
+											<ArticleList
+												articles={data}
+												renderStyle="manual"
+												manualConfig={[{
+													id: section.articleId,
+													variant: "custom",
+													basePath: `/${contentType}/`
+												}]}
+												filteredIds={[section.articleId]}
+												contentType={contentType}
+											/>
+										</ScrollReveal>
 									</div>
 								) : (
 									<div className="TopSections-error">Контент не найден</div>
@@ -61,8 +66,9 @@ export default function TopSections({
 					})
 				) : (
 					// Режим 'solo' - одна карточка с изображением, текстом и кнопкой
-					<div className="TopSections-solo-wrapper">
-						
+					<ScrollReveal index={0}>
+						<div className="TopSections-solo-wrapper">
+
 							{soloImage && (
 								<div className="TopSections-solo-image">
 									<img src={soloImage} alt="Custom content" className="TopSections-solo-image" />
@@ -73,10 +79,11 @@ export default function TopSections({
 									{soloText}
 								</div>
 							)}
-						
-							<Button theme="red-outline" text={ button_text } onClick={onButtonClick} />
-						
-					</div>
+
+							<Button theme="red-outline" text={button_text} onClick={onButtonClick} />
+
+						</div>
+					</ScrollReveal>
 				)}
 			</div>
 		</div>

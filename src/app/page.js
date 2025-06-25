@@ -1,6 +1,8 @@
 "use client";
-import Navbar from "./components/Navigation/Navbar/Navbar";
+
 import "./globals.css";
+import ScrollReveal from "./components/Utils/ScrollReveal";
+import Navbar from "./components/Navigation/Navbar/Navbar";
 import MainInfo from "./components/Main/Main_Info/MainInfo";
 import MonthBest from "./components/Main/Main_MonthBest/MonthBest";
 import TestBanner from "./components/Landing/Lan_TestBanner/TestBanner";
@@ -9,15 +11,26 @@ import Subscrib from "./components/Landing/Lan_Subscribtion/Subscrib";
 import Footer from "./components/Navigation/Footer/Footer";
 
 export default function Home() {
-  return (
-    <div className="LandingBox">
-      <Navbar />
-      <MainInfo />
-      <MonthBest/>
-      <TestBanner id="test-banner" />
-      <ToDo />
-      <Subscrib text="следите за нашими новостями!"/>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="LandingBox">
+			<Navbar />
+
+			<MainInfo />
+
+			<ScrollReveal index={0}>
+				<MonthBest />
+			</ScrollReveal>
+
+			<TestBanner id="test-banner" />
+
+			<ScrollReveal index={2}>
+				<ToDo />
+			</ScrollReveal>
+
+			<ScrollReveal index={3}>
+				<Subscrib text="следите за нашими новостями!" />
+			</ScrollReveal>
+			<Footer />
+		</div>
+	);
 }

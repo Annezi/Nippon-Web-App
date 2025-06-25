@@ -2,6 +2,7 @@
 
 import "./ReadMore.css";
 import { useEffect, useState } from "react";
+import ScrollReveal from "../../Utils/ScrollReveal";
 import ArticleList from "../Article_List/ArticleList";
 import articles from "../../../database/articlesData.json";
 import anime from "../../../database/animeData.json";
@@ -48,23 +49,25 @@ export default function ReadMore() {
 	}, []);
 
 	return (
-		<div className="readMore-container">
-			<div className="text-title-m">Читайте дальше</div>
-			{randomPosts.length > 0 && (
-				<ArticleList
-					articles={[
-						...articles.articles,
-						...anime.anime,
-						...manga.manga,
-						...news.news,
-						...places.places,
-						...quiz.quiz
-					]}
-					renderStyle="manual"
-					manualConfig={randomPosts}
-					limit={4}
-				/>
-			)}
-		</div>
+		<ScrollReveal index={2}>
+			<div className="readMore-container">
+				<div className="text-title-m">Читайте дальше</div>
+				{randomPosts.length > 0 && (
+					<ArticleList
+						articles={[
+							...articles.articles,
+							...anime.anime,
+							...manga.manga,
+							...news.news,
+							...places.places,
+							...quiz.quiz
+						]}
+						renderStyle="manual"
+						manualConfig={randomPosts}
+						limit={4}
+					/>
+				)}
+			</div>
+		</ScrollReveal>
 	);
 }

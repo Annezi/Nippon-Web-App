@@ -1,5 +1,6 @@
 'use client';
 import "../globals.css";
+import ScrollReveal from "../components/Utils/ScrollReveal";
 import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
 import ArticleList from '../components/Articles/Article_List/ArticleList';
@@ -19,21 +20,25 @@ export default function QuizPage() {
 				contentType="quiz"
 			/>
 
-			<ArticleList
-				articles={quiz.quiz}
-				renderStyle="manual"
-				tagFilter={true}
-				manualConfig={
-					quiz.quiz.map(item => ({
-						id: item.id,
-						variant: "large",
-						basePath: "/quiz/"
-					}))
-				}
-				contentType="quiz"
-			/>
+			<ScrollReveal index={2}>
+				<ArticleList
+					articles={quiz.quiz}
+					renderStyle="manual"
+					tagFilter={true}
+					manualConfig={
+						quiz.quiz.map(item => ({
+							id: item.id,
+							variant: "large",
+							basePath: "/quiz/"
+						}))
+					}
+					contentType="quiz"
+				/>
+			</ScrollReveal>
 
-			<MonthBest />
+			<ScrollReveal index={3}>
+				<MonthBest />
+			</ScrollReveal>
 			<Footer />
 		</div>
 	);

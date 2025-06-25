@@ -63,6 +63,7 @@ export default function Navigation() {
                         <Link href="/about">О нас</Link>
                     </div>
                 </div>
+				
 
                 <div className="search">
                     {isSearchPage ? (

@@ -1,13 +1,12 @@
 import Link from "next/link";
 import "./WTDCard.css";
+import Button from "../Button/Button";
 
-export default function WTDCard({ id, cover, description, url }) {
+export default function WTDCard({ id, cover, description, onButtonClick, buttonText }) {
 	return (
-		<Link href={url} className="wtd-card-link">
-			<div className="wtd-card">
-				<img src={cover} alt={description} className="wtd-card-image" />
-				<p className="wtd-card-description">{description}</p>
-			</div>
-		</Link>
+		<div className="wtd-card">
+			<img src={cover} alt={description} className="wtd-card-image" />
+			<Button theme="white-outline" text={buttonText} onClick={onButtonClick}/>
+		</div>
 	);
 }

@@ -1,10 +1,12 @@
 .Maskot-container {
 	width: 100%;
 	max-width: 900px;
+	min-width: 288px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	gap: 100px;
 }
 
 .Maskot-info {
@@ -15,11 +17,13 @@
 	gap: 16px;
 }
 
-@media screen and (max-width: 710px) {
-	.maskot-img img {
-		width: 100px;
+@media screen and (max-width: 768px) {
+	.Maskot-container{
+		flex-direction: column-reverse;
+		gap: 20px;
 	}
-	.maskot-img {
-		width: 100px;
+
+	.maskot-img img {
+		width: 200px;
 	}
 }

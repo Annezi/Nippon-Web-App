@@ -17,7 +17,7 @@ export default function News() {
 					<div className="news-description text-paragraph">Мы тщательно отбираем новости для публикации, чтобы вам не было скучно их читать.</div>
 				</div>
 				<div className="news-tanaka-san">
-					<img src="./Landing/tanaka-san-happy.png" alt="tanaka-san" />
+					<img className='news-tanaka-sen' src="./Landing/tanaka-san-happy.png" alt="tanaka-san" />
 				</div>
 			</div>
 		</div>
