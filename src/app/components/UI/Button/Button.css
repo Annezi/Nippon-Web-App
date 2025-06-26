@@ -7,6 +7,10 @@
 	border-radius: 5px;
 	border-color: transparent;
 	cursor: pointer;
+
+	transition-property: background-color, color, transform, box-shadow, border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 /* Темы кнопок */
@@ -16,6 +20,9 @@
 }
 
 .button-white:hover {
+	background-color: var(--red-color);
+	color: var(--white-color);
+	border: 2px solid var(--white-color);
 }
 
 .button-red {

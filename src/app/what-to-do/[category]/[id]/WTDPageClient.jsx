@@ -9,15 +9,17 @@ import Footer from "../../../components/Navigation/Footer/Footer";
 export default function WTDPageDetailClient({ WTDPage }) {
 	return (
 		<div className="ContainerBox">
-			<Header />
-			<Banner
-				tags={WTDPage.tags}
-				title={WTDPage.title}
-				description={WTDPage.description}
-				cover={WTDPage.cover}
-				readTime={WTDPage.readTime || "~3 минуты"}
-				publishDate={WTDPage.publishDate || "Дата публикации не указана"}
-			/>
+			<div className="header-section-box">
+				<Header />
+				<Banner
+					tags={WTDPage.tags}
+					title={WTDPage.title}
+					description={WTDPage.description}
+					cover={WTDPage.cover}
+					readTime={WTDPage.readTime || "~3 минуты"}
+					publishDate={WTDPage.publishDate || "Дата публикации не указана"}
+				/>
+			</div>
 			<Essay content={WTDPage.content} />
 			<ShareButtons url={`${window.location.origin}/WTDPage/${WTDPage.id}`} />
 			<ReadMore currentArticleId={WTDPage.id} contentType="WTDPage" />

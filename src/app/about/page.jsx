@@ -1,7 +1,6 @@
 'use client';
 import "../globals.css";
 import ScrollReveal from "../components/Utils/ScrollReveal";
-import Navbar from "../components/Navigation/Navbar/Navbar";
 import LanInfo from "../components/Landing/Lan_Info/Info";
 import LanNews from '../components/Landing/Lan_News/News';
 import LanAbout from '../components/Landing/Lan_About/About';
@@ -14,8 +13,6 @@ import Footer from "../components/Navigation/Footer/Footer";
 export default function AboutPage() {
 	return (
 		<div className="LandingBox">
-			<Navbar />
-
 			<LanInfo />
 			<LanNews />
 

@@ -1,4 +1,5 @@
 import ArticleList from '../../Articles/Article_List/ArticleList';
+import Navbar from "../../Navigation/Navbar/Navbar"
 import articles from "../../../database/articlesData.json"
 import ScrollReveal from '../../Utils/ScrollReveal';
 import './MainInfo.css';
@@ -6,6 +7,7 @@ import './MainInfo.css';
 export default function Info() {
 	return (
 		<div className='mainBanner-container'>
+			<Navbar />
 			<ScrollReveal index={0}>
 			<div className="mainBanner-info-plate">
 					<div className='mainBanner'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import './TopSections.css';
 
 
@@ -9,6 +10,7 @@ import news from "../../../database/newsData.json";
 import quiz from "../../../database/quizData.json";
 import places from "../../../database/placeData.json";
 import Button from "../../UI/Button/Button";
+import Navbar from "../../Navigation/Navbar/Navbar"
 
 const CONTENT_DATA = {
 	articles: articles.articles,
@@ -31,6 +33,7 @@ export default function TopSections({
 
 	return (
 		<div className='TopSections-container'>
+			<Navbar />
 			<div className="TopSections-info-plate">
 				{displayMode === "double" ? (
 					// Режим 'double' - две карточки со статьями
@@ -71,7 +74,13 @@ export default function TopSections({
 
 							{soloImage && (
 								<div className="TopSections-solo-image">
-									<img src={soloImage} alt="Custom content" className="TopSections-solo-image" />
+									<Image
+										src={soloImage}
+										alt="Custom content"
+										className="TopSections-solo-image"
+										width={1320}
+										height={552}
+									/>
 								</div>
 							)}
 							{soloText && (

@@ -9,15 +9,17 @@ import Footer from "../../components/Navigation/Footer/Footer";
 export default function NewsDetailClient({ news }) {
 	return (
 		<div className="ContainerBox">
-			<Header />
-			<Banner
-				tags={news.tags}
-				title={news.title}
-				description={news.description}
-				cover={news.cover}
-				readTime={news.readTime || "~3 минуты"}
-				publishDate={news.publishDate || "Дата публикации не указана"}
-			/>
+			<div className="header-section-box">
+				<Header />
+				<Banner
+					tags={news.tags}
+					title={news.title}
+					description={news.description}
+					cover={news.cover}
+					readTime={news.readTime || "~3 минуты"}
+					publishDate={news.publishDate || "Дата публикации не указана"}
+				/>
+			</div>
 			<Essay content={news.content} />
 			<ShareButtons url={`${window.location.origin}/news/${news.id}`} />
 			<ReadMore currentArticleId={news.id} contentType="news" />

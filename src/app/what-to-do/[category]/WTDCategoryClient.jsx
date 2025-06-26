@@ -1,7 +1,6 @@
 'use client';
 import "../../globals.css";
 import { getDataByContentType } from '../../components/Utils/dataMapper';
-import Navbar from "../../components/Navigation/Navbar/Navbar";
 import TopSections from '../../components/Main/Top_Sections_box/TopSections';
 import Footer from "../../components/Navigation/Footer/Footer";
 import ArticleList from "../../components/Articles/Article_List/ArticleList";
@@ -23,7 +22,6 @@ export default async function WTDCategoryClient({ section }) {
 
 	return (
 		<div className="LandingBox">
-			<Navbar />
 			<TopSections
 				displayMode="solo"
 				soloImage={section.cover}

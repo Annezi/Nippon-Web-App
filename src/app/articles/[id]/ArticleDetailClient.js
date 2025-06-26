@@ -9,15 +9,17 @@ import Footer from "../../components/Navigation/Footer/Footer";
 export default function ArticleDetailClient({ article }) {
 	return (
 		<div className="ContainerBox">
-			<Header />
-			<Banner
-				tags={article.tags}
-				title={article.title}
-				description={article.description}
-				cover={article.cover}
-				readTime={article.readTime || "~5 минут"}
-				publishDate={article.publishDate || "Дата публикации не указана"}
-			/>
+			<div className="header-section-box">
+				<Header />
+				<Banner
+					tags={article.tags}
+					title={article.title}
+					description={article.description}
+					cover={article.cover}
+					readTime={article.readTime || "~5 минут"}
+					publishDate={article.publishDate || "Дата публикации не указана"}
+				/>
+			</div>
 			<Essay content={article.content} />
 			<ShareButtons url={`${window.location.origin}/articles/${article.id}`} />
 			<ReadMore currentArticleId={article.id} />

@@ -90,4 +90,8 @@
 		align-items: flex-start;
 		margin-top: 20px;
 	}
+
+	.ArticleInfo-title {
+		font-size: 24px;
+	}
 }

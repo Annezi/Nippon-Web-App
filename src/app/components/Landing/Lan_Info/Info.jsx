@@ -1,8 +1,10 @@
 import './Info.css';
+import Navbar from "../../Navigation/Navbar/Navbar"
 
 export default function Info() {
 	return (
 		<div className='mainBanner-container'>
+			<Navbar />
 			<div className="mainBanner-info-plate">
 				<div className='mainBanner'>
 					<div className="black-dots">

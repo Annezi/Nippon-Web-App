@@ -6,6 +6,7 @@
 		url('/fonts/KOT-Eitai_Gothic.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
+	font-display: swap;
 }
 
 html {
@@ -233,10 +234,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 33px;
 }
 
-.LandingBox>*:not(:last-child, :first-child) {
+.LandingBox>*:not(:last-child) {
 	margin-bottom: 80px;
 }
 
@@ -245,10 +245,19 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 33px;
 }
 
-.ContainerBox>*:not(:last-child, :first-child) {
+.header-section-box {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+	align-items: center;
+	padding: 0 20px 40px;
+}
+
+.ContainerBox>*:not(:last-child) {
 	margin-bottom: 80px;
 }
 

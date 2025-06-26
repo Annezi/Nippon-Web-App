@@ -9,15 +9,17 @@ import Footer from "../../components/Navigation/Footer/Footer";
 export default function QuizDetailClient({ quiz }) {
 	return (
 		<div className="ContainerBox">
-			<Header />
-			<Banner
-				tags={quiz.tags}
-				title={quiz.title}
-				description={quiz.description}
-				cover={quiz.cover}
-				readTime={quiz.readTime || "~3 минуты"}
-				publishDate={quiz.publishDate || "Дата публикации не указана"}
-			/>
+			<div className="header-section-box">
+				<Header />
+				<Banner
+					tags={quiz.tags}
+					title={quiz.title}
+					description={quiz.description}
+					cover={quiz.cover}
+					readTime={quiz.readTime || "~3 минуты"}
+					publishDate={quiz.publishDate || "Дата публикации не указана"}
+				/>
+			</div>
 			<QuizComponent quiz={quiz} />
 			<ShareButtons url={`${window.location.origin}/quiz/${quiz.id}`} />
 			<ReadMore currentArticleId={quiz.id} contentType="quiz" />

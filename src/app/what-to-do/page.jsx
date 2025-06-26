@@ -5,7 +5,6 @@ import "./what-to-do.css";
 import "../components/Main/Main_ToDo/ToDo.css"
 
 import ScrollReveal from "../components/Utils/ScrollReveal";
-import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
 import Footer from "../components/Navigation/Footer/Footer";
 import SighBanner from "../components/Other/SignBanner/SignBanner";
@@ -20,7 +19,6 @@ const whatToDoSections = data?.sections ? data : { sections: [] };
 export default function WhatToDoPage() {
 	return (
 		<div className="LandingBox">
-			<Navbar />
 			<TopSections
 				displayMode="solo"
 				soloImage="/OtherImg/cover-section-1.jpg"

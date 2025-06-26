@@ -1,7 +1,6 @@
 'use client';
 import "../globals.css";
 import ScrollReveal from "../components/Utils/ScrollReveal";
-import Navbar from "../components/Navigation/Navbar/Navbar";
 import TopSections from '../components/Main/Top_Sections_box/TopSections';
 import ArticleList from '../components/Articles/Article_List/ArticleList';
 import quiz from '../database/quizData.json';
@@ -11,7 +10,6 @@ import MonthBest from "../components/Main/Main_MonthBest/MonthBest";
 export default function QuizPage() {
 	return (
 		<div className="LandingBox">
-			<Navbar />
 			<TopSections
 				sections={[
 					{ title: "кто я?", articleId: "test-kem-by-vy-bili-v-srednevekovoy-yaponii" },
